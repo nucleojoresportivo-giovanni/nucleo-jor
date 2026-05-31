@@ -65,11 +65,11 @@ function writePNG(filePath, r, g, b, size = 64) {
 const logos = [
   'africa', 'alemanha', 'arabia', 'argelia', 'argentina', 'australia', 'austria',
   'belgica', 'bosnia', 'brasil', 'cabo-verde', 'canada', 'catar', 'colombia',
-  'coreia-do-sul', 'croacia', 'curacao', 'egito', 'equador', 'escocia', 'espanha',
-  'franca', 'gana', 'haiti', 'holanda', 'inglaterra', 'iran', 'iraque', 'italia',
-  'japao', 'jordania', 'marrocos', 'mexico', 'nigeria', 'noruega', 'nz', 'panama',
-  'paraguai', 'portugal', 'senegal', 'suecia', 'suica', 'tcheca', 'tunisia',
-  'turquia', 'uruguai', 'usa', 'uzbequistao',
+  'congo', 'coreia-do-sul', 'costa-do-marfim', 'croacia', 'curacao', 'egito',
+  'equador', 'escocia', 'espanha', 'franca', 'gana', 'haiti', 'holanda',
+  'inglaterra', 'iran', 'iraque', 'japao', 'jordania', 'marrocos', 'mexico',
+  'noruega', 'nz', 'panama', 'paraguai', 'portugal', 'senegal', 'suecia',
+  'suica', 'tcheca', 'tunisia', 'turquia', 'uruguai', 'usa', 'uzbequistao',
 ];
 
 const logoColors = {

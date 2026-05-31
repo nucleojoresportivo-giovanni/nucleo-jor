@@ -24,6 +24,9 @@ npm install
 # Gerar imagens placeholder (logos Copa 2026 + capas)
 node scripts/generate-placeholders.mjs
 
+# Ou, se já tiver as logos na raiz do projeto:
+node scripts/copy-logos.mjs
+
 # Servidor de desenvolvimento
 npm run dev
 ```
