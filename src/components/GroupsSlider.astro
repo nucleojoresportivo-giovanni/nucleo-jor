@@ -1,0 +1,187 @@
+---
+import { worldCupGroups } from '@/data/site';
+
+const LOGO_BASE = '/logos/copa2026';
+---
+
+<section class="groups-slider border-y border-nucleo-gold/40 bg-nucleo-black" aria-label="Grupos da Copa do Mundo 2026">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <h2 class="font-headline font-bold text-nucleo-gold text-sm sm:text-base uppercase tracking-[0.15em] text-center mb-3">
+      Copa do Mundo 2026 · Grupos
+    </h2>
+
+    <div class="relative flex items-center gap-2 sm:gap-4 max-h-[160px]">
+      <!-- Prev -->
+      <button
+        type="button"
+        id="groups-prev"
+        class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-nucleo-gold hover:text-nucleo-white transition-colors duration-200"
+        aria-label="Grupo anterior"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+
+      <!-- Slider -->
+      <div
+        id="groups-track"
+        class="groups-track flex-1 flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-0 scrollbar-hide"
+        style="scroll-behavior: smooth;"
+      >
+        {
+          worldCupGroups.map((group) => (
+            <div
+              class="groups-slide flex-shrink-0 w-full snap-start flex flex-col items-center justify-center py-2"
+              data-group={group.id}
+            >
+              <p class="font-headline text-nucleo-gold/80 text-xs uppercase tracking-widest mb-2">
+                {group.label}
+              </p>
+              <div class="flex items-end justify-center gap-4 sm:gap-8 md:gap-12">
+                {group.teams.map((team) => (
+                  <div class="flex flex-col items-center gap-1.5 min-w-[52px] sm:min-w-[64px]">
+                    <img
+                      src={`${LOGO_BASE}/${team.logo}`}
+                      alt={`Logo ${team.name}`}
+                      class="h-10 sm:h-12 w-auto object-contain"
+                      loading="lazy"
+                      width="48"
+                      height="48"
+                    />
+                    <span class="text-[11px] text-nucleo-white text-center leading-tight max-w-[72px]">
+                      {team.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- Next -->
+      <button
+        type="button"
+        id="groups-next"
+        class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-nucleo-gold hover:text-nucleo-white transition-colors duration-200"
+        aria-label="Próximo grupo"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Indicators -->
+    <div id="groups-indicators" class="flex justify-center gap-1.5 mt-3" role="tablist" aria-label="Indicadores de grupo">
+      {
+        worldCupGroups.map((group, i) => (
+          <button
+            type="button"
+            class="groups-indicator h-0.5 w-4 sm:w-5 bg-nucleo-gold/25 transition-all duration-300 rounded-full"
+            data-index={i}
+            role="tab"
+            aria-label={`Grupo ${group.id}`}
+            aria-selected={i === 0 ? 'true' : 'false'}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .groups-track {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .groups-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .groups-slide {
+    scroll-snap-align: start;
+  }
+
+  .groups-indicator.active {
+    background-color: #C9A227;
+    width: 1.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .groups-indicator.active {
+      width: 2.25rem;
+    }
+  }
+</style>
+
+<script>
+  function initGroupsSlider() {
+    const track = document.getElementById('groups-track');
+    const prevBtn = document.getElementById('groups-prev');
+    const nextBtn = document.getElementById('groups-next');
+    const indicators = document.querySelectorAll<HTMLButtonElement>('.groups-indicator');
+    const slides = document.querySelectorAll('.groups-slide');
+
+    if (!track || slides.length === 0) return;
+
+    let currentIndex = 0;
+
+    function getSlideWidth() {
+      return track!.clientWidth;
+    }
+
+    function scrollToIndex(index: number) {
+      currentIndex = Math.max(0, Math.min(index, slides.length - 1));
+      track!.scrollTo({
+        left: currentIndex * getSlideWidth(),
+        behavior: 'smooth',
+      });
+      updateIndicators();
+    }
+
+    function updateIndicators() {
+      indicators.forEach((indicator, i) => {
+        const isActive = i === currentIndex;
+        indicator.classList.toggle('active', isActive);
+        indicator.setAttribute('aria-selected', String(isActive));
+      });
+    }
+
+    function getCurrentIndexFromScroll() {
+      const slideWidth = getSlideWidth();
+      if (slideWidth === 0) return 0;
+      return Math.round(track!.scrollLeft / slideWidth);
+    }
+
+    prevBtn?.addEventListener('click', () => scrollToIndex(currentIndex - 1));
+    nextBtn?.addEventListener('click', () => scrollToIndex(currentIndex + 1));
+
+    indicators.forEach((indicator) => {
+      indicator.addEventListener('click', () => {
+        const index = parseInt(indicator.dataset.index ?? '0', 10);
+        scrollToIndex(index);
+      });
+    });
+
+    track.addEventListener('scroll', () => {
+      const newIndex = getCurrentIndexFromScroll();
+      if (newIndex !== currentIndex) {
+        currentIndex = newIndex;
+        updateIndicators();
+      }
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+      scrollToIndex(currentIndex);
+    });
+
+    updateIndicators();
+  }
+
+  initGroupsSlider();
+  document.addEventListener('astro:page-load', initGroupsSlider);
+</script>

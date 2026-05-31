@@ -1,0 +1,86 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleCard from '@/components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import type { Category } from '@/content/config';
+
+const categories: Category[] = ['Copa Feminina 2027', 'Futebol', 'Esportes', 'Especial'];
+const activeCategory = Astro.url.searchParams.get('categoria') as Category | null;
+
+const allReportagens = await getCollection('reportagens');
+const filtered = activeCategory
+  ? allReportagens.filter((r) => r.data.category === activeCategory)
+  : allReportagens;
+
+const sorted = filtered.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<BaseLayout
+  title="Reportagens"
+  description="Todas as reportagens do Núcleo — Jornalismo Esportivo UFSC. Futebol, esportes universitários, especiais e Copa Feminina 2027."
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+    <header class="mb-10">
+      <h1 class="font-headline font-bold text-3xl sm:text-4xl text-nucleo-white uppercase tracking-wide">
+        Reportagens
+      </h1>
+      <p class="mt-3 text-nucleo-white/60 max-w-2xl">
+        Cobertura esportiva produzida por estudantes de jornalismo da UFSC.
+      </p>
+    </header>
+
+    <!-- Filters -->
+    <nav class="flex flex-wrap gap-2 mb-10" aria-label="Filtrar por categoria">
+      <a
+        href="/reportagens"
+        class:list={[
+          'px-4 py-2 text-xs uppercase tracking-wider border transition-all duration-200',
+          !activeCategory
+            ? 'border-nucleo-gold text-nucleo-gold bg-nucleo-gold/10'
+            : 'border-white/10 text-nucleo-white/60 hover:border-nucleo-gold/50 hover:text-nucleo-gold',
+        ]}
+      >
+        Todas
+      </a>
+      {
+        categories.map((cat) => (
+          <a
+            href={`/reportagens?categoria=${encodeURIComponent(cat)}`}
+            class:list={[
+              'px-4 py-2 text-xs uppercase tracking-wider border transition-all duration-200',
+              activeCategory === cat
+                ? 'border-nucleo-gold text-nucleo-gold bg-nucleo-gold/10'
+                : 'border-white/10 text-nucleo-white/60 hover:border-nucleo-gold/50 hover:text-nucleo-gold',
+            ]}
+          >
+            {cat}
+          </a>
+        ))
+      }
+    </nav>
+
+    {sorted.length === 0 ? (
+      <p class="text-nucleo-white/50 text-center py-16">
+        Nenhuma reportagem encontrada nesta categoria.
+      </p>
+    ) : (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          sorted.map((article) => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.excerpt}
+              category={article.data.category}
+              coverImage={article.data.coverImage}
+              href={`/reportagens/${article.slug}`}
+              date={article.data.date}
+              size="md"
+            />
+          ))
+        }
+      </div>
+    )}
+  </div>
+</BaseLayout>

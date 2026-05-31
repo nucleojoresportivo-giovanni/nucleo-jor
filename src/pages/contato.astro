@@ -1,0 +1,100 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contato"
+  description="Entre em contato com o Núcleo — Jornalismo Esportivo UFSC. Sugestões de pauta, parcerias e dúvidas."
+>
+  <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+    <header class="mb-10">
+      <h1 class="font-headline font-bold text-4xl text-nucleo-white uppercase tracking-wide">
+        Fale Conosco
+      </h1>
+      <p class="mt-3 text-nucleo-white/60">
+        Tem uma sugestão de pauta, quer propor uma parceria ou enviar um recado? Preencha o formulário abaixo.
+      </p>
+    </header>
+
+    <form id="contact-form" class="space-y-6">
+      <div>
+        <label for="nome" class="block text-sm text-nucleo-white/70 mb-2 uppercase tracking-wider">
+          Nome
+        </label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          class="w-full bg-nucleo-black border border-white/10 px-4 py-3 text-nucleo-white placeholder:text-nucleo-white/30 focus:border-nucleo-gold focus:outline-none transition-colors duration-200"
+          placeholder="Seu nome completo"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm text-nucleo-white/70 mb-2 uppercase tracking-wider">
+          E-mail
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full bg-nucleo-black border border-white/10 px-4 py-3 text-nucleo-white placeholder:text-nucleo-white/30 focus:border-nucleo-gold focus:outline-none transition-colors duration-200"
+          placeholder="seu@email.com"
+        />
+      </div>
+
+      <div>
+        <label for="assunto" class="block text-sm text-nucleo-white/70 mb-2 uppercase tracking-wider">
+          Assunto
+        </label>
+        <input
+          type="text"
+          id="assunto"
+          name="assunto"
+          required
+          class="w-full bg-nucleo-black border border-white/10 px-4 py-3 text-nucleo-white placeholder:text-nucleo-white/30 focus:border-nucleo-gold focus:outline-none transition-colors duration-200"
+          placeholder="Sobre o que você quer falar?"
+        />
+      </div>
+
+      <div>
+        <label for="mensagem" class="block text-sm text-nucleo-white/70 mb-2 uppercase tracking-wider">
+          Mensagem
+        </label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          required
+          rows="5"
+          class="w-full bg-nucleo-black border border-white/10 px-4 py-3 text-nucleo-white placeholder:text-nucleo-white/30 focus:border-nucleo-gold focus:outline-none transition-colors duration-200 resize-y"
+          placeholder="Escreva sua mensagem..."
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-nucleo-gold text-nucleo-black py-3 px-6 font-medium text-sm uppercase tracking-wider hover:bg-nucleo-gold-dark transition-colors duration-200"
+      >
+        Enviar mensagem
+      </button>
+
+      <p id="form-success" class="hidden text-center text-nucleo-gold text-sm">
+        Mensagem enviada com sucesso! Entraremos em contato em breve.
+      </p>
+    </form>
+  </div>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  const success = document.getElementById('form-success');
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.reset();
+    success?.classList.remove('hidden');
+    setTimeout(() => success?.classList.add('hidden'), 5000);
+  });
+</script>

@@ -1,0 +1,94 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const programas = [
+  { titulo: 'Esporte Total', data: '28/05/2026', descricao: 'Análise da rodada do Campeonato Catarinense e convocação da Seleção.' },
+  { titulo: 'Arena UFSC', data: '26/05/2026', descricao: 'Transmissão ao vivo: Avaí 2 x 1 Figueirense.' },
+  { titulo: 'Resenha Esportiva', data: '23/05/2026', descricao: 'Entrevista com atletas paralímpicos formados na universidade.' },
+  { titulo: 'Esporte Total', data: '21/05/2026', descricao: 'Preparação da Seleção Brasileira Feminina para amistosos.' },
+  { titulo: 'Arena UFSC', data: '19/05/2026', descricao: 'Cobertura do Campeonato Universitário de Vôlei.' },
+];
+---
+
+<BaseLayout
+  title="Rádio UFSC"
+  description="Rádio UFSC — 50 anos de jornalismo universitário. Ouça ao vivo e conheça os programas esportivos."
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+    <header class="mb-12">
+      <span class="text-nucleo-gold text-xs uppercase tracking-[0.25em]">Parceiro</span>
+      <h1 class="mt-4 font-headline font-bold text-4xl sm:text-5xl text-nucleo-white uppercase tracking-wide">
+        Rádio UFSC
+      </h1>
+      <p class="mt-4 text-nucleo-white/60 text-lg leading-relaxed max-w-2xl">
+        Emissora universitária com mais de 50 anos de história. Referência em jornalismo, cultura e esporte em Santa Catarina.
+      </p>
+    </header>
+
+    <!-- Stream CTA -->
+    <section class="border border-nucleo-gold/30 p-6 sm:p-8 mb-12 card-hover">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+        <div>
+          <h2 class="font-headline font-bold text-xl text-nucleo-gold uppercase tracking-wide">
+            Ouça ao vivo
+          </h2>
+          <p class="mt-2 text-sm text-nucleo-white/60">
+            Programação 24h com jornalismo, música e esporte.
+          </p>
+        </div>
+        <a
+          href="https://radio.ufsc.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 bg-nucleo-gold text-nucleo-black px-6 py-3 font-medium text-sm uppercase tracking-wider hover:bg-nucleo-gold-dark transition-colors duration-200"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          Iniciar stream
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="mb-12">
+      <h2 class="font-headline font-bold text-xl text-nucleo-white uppercase tracking-wide mb-4">
+        Sobre a emissora
+      </h2>
+      <div class="prose prose-invert max-w-none text-nucleo-white/70 leading-relaxed space-y-4">
+        <p>
+          Fundada em 1976, a Rádio UFSC é uma das emissoras universitárias mais antigas do Brasil em operação contínua. Localizada no campus Trindade, em Florianópolis, a rádio é mantida pela Universidade Federal de Santa Catarina.
+        </p>
+        <p>
+          A cobertura esportiva é um dos carros-chefe da programação, com transmissões ao vivo, programas de análise e entrevistas com atletas e técnicos. O Núcleo mantém parceria editorial com a emissora para ampliar o alcance das reportagens esportivas produzidas na universidade.
+        </p>
+      </div>
+    </section>
+
+    <!-- Recent Programs -->
+    <section>
+      <h2 class="font-headline font-bold text-xl text-nucleo-white uppercase tracking-wide mb-6">
+        Últimos programas
+      </h2>
+      <ul class="space-y-4">
+        {
+          programas.map((prog) => (
+            <li class="border border-white/5 p-4 sm:p-5 hover:border-nucleo-gold/30 transition-colors duration-200">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                <div>
+                  <h3 class="font-headline font-bold text-nucleo-white uppercase tracking-wide">
+                    {prog.titulo}
+                  </h3>
+                  <p class="mt-1 text-sm text-nucleo-white/60">{prog.descricao}</p>
+                </div>
+                <time class="text-xs text-nucleo-gold uppercase tracking-wider whitespace-nowrap">
+                  {prog.data}
+                </time>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

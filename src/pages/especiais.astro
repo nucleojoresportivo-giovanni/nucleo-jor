@@ -1,0 +1,71 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CategoryBadge from '@/components/CategoryBadge.astro';
+import { getCollection } from 'astro:content';
+
+const especiais = (await getCollection('reportagens'))
+  .filter((r) => r.data.category === 'Especial')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout
+  title="Especiais"
+  description="Reportagens especiais do Núcleo — longform, investigação e histórias que vão além do placar."
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+    <header class="mb-12 text-center">
+      <span class="text-nucleo-gold text-xs uppercase tracking-[0.25em]">Longform</span>
+      <h1 class="mt-4 font-headline font-bold text-4xl sm:text-5xl text-nucleo-white uppercase tracking-wide">
+        Especiais
+      </h1>
+      <p class="mt-4 font-editorial italic text-lg text-nucleo-white/60 max-w-xl mx-auto">
+        Reportagens de profundidade que exploram as histórias por trás do esporte universitário e profissional.
+      </p>
+    </header>
+
+    <div class="space-y-16">
+      {
+        especiais.map((article, i) => {
+          const formattedDate = article.data.date.toLocaleDateString('pt-BR', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric',
+          });
+          return (
+            <article class="group border-b border-white/10 pb-16 last:border-0">
+              <a href={`/reportagens/${article.slug}`} class="block">
+                <div class:list={['grid gap-6 items-center', i % 2 === 0 ? 'md:grid-cols-5' : 'md:grid-cols-5 md:[direction:rtl]']}>
+                  <div class="md:col-span-2 md:[direction:ltr]">
+                    <img
+                      src={article.data.coverImage}
+                      alt={article.data.title}
+                      class="w-full aspect-[4/3] object-cover card-hover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="md:col-span-3 md:[direction:ltr]">
+                    <CategoryBadge category={article.data.category} />
+                    <h2 class="mt-3 font-headline font-bold text-2xl sm:text-3xl text-nucleo-white uppercase tracking-wide leading-tight group-hover:text-nucleo-gold transition-colors duration-200">
+                      {article.data.title}
+                    </h2>
+                    <p class="mt-3 font-editorial italic text-nucleo-white/70 text-lg leading-relaxed">
+                      {article.data.excerpt}
+                    </p>
+                    <div class="mt-4 flex items-center gap-3 text-sm text-nucleo-white/40">
+                      <span>{article.data.author}</span>
+                      <span aria-hidden="true">·</span>
+                      <time datetime={article.data.date.toISOString()}>{formattedDate}</time>
+                    </div>
+                    <span class="mt-5 inline-block text-nucleo-gold text-sm uppercase tracking-wider group-hover:underline">
+                      Ler reportagem →
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+</BaseLayout>

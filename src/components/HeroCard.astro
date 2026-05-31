@@ -1,0 +1,46 @@
+---
+import CategoryBadge from './CategoryBadge.astro';
+
+interface Props {
+  title: string;
+  excerpt: string;
+  category: string;
+  coverImage: string;
+  href: string;
+  date: Date;
+}
+
+const { title, excerpt, category, coverImage, href, date } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('pt-BR', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<article class="relative group h-[70vh] min-h-[480px] max-h-[720px] overflow-hidden">
+  <a href={href} class="block h-full">
+    <img
+      src={coverImage}
+      alt={title}
+      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-nucleo-black via-nucleo-black/60 to-transparent"></div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 lg:p-12">
+      <CategoryBadge category={category} />
+      <h1 class="mt-4 font-headline font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-nucleo-white leading-tight uppercase tracking-wide max-w-4xl transition-colors duration-200 group-hover:text-nucleo-gold">
+        {title}
+      </h1>
+      <p class="mt-4 font-editorial italic text-nucleo-white/80 text-lg sm:text-xl max-w-2xl line-clamp-2">
+        {excerpt}
+      </p>
+      <time datetime={date.toISOString()} class="mt-4 block text-sm text-nucleo-white/50">
+        {formattedDate}
+      </time>
+    </div>
+  </a>
+</article>

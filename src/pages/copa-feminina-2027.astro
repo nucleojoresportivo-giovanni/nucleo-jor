@@ -1,0 +1,127 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleCard from '@/components/ArticleCard.astro';
+import CopaBanner from '@/components/CopaBanner.astro';
+import { getCollection } from 'astro:content';
+
+const copaArticles = (await getCollection('reportagens'))
+  .filter((r) => r.data.category === 'Copa Feminina 2027')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const targetDate = new Date('2027-07-01T00:00:00-03:00');
+---
+
+<BaseLayout
+  title="Copa Feminina 2027"
+  description="Cobertura especial da Copa do Mundo Feminina 2027, sediada no Brasil. Reportagens, análises e contagem regressiva."
+>
+  <!-- Hero Banner -->
+  <section class="relative bg-nucleo-gold overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[repeating-linear-gradient(-45deg,transparent,transparent_20px,rgba(0,0,0,0.08)_20px,rgba(0,0,0,0.08)_40px)]"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <span class="text-nucleo-black/50 text-xs uppercase tracking-[0.25em]">Seção Especial</span>
+      <h1 class="mt-4 font-headline font-bold text-4xl sm:text-5xl lg:text-6xl text-nucleo-black uppercase tracking-wide leading-none">
+        Copa do Mundo<br />Feminina 2027
+      </h1>
+      <p class="mt-6 font-editorial italic text-nucleo-black/70 text-lg sm:text-xl max-w-2xl">
+        Pela primeira vez, o Brasil sediará o maior torneio de futebol feminino do planeta.
+      </p>
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="border-y border-nucleo-gold/30 bg-nucleo-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <h2 class="font-headline text-nucleo-gold text-sm uppercase tracking-[0.2em] text-center mb-6">
+        Contagem Regressiva
+      </h2>
+      <div id="countdown" class="flex justify-center gap-4 sm:gap-8" data-target={targetDate.toISOString()}>
+        <div class="text-center">
+          <span id="cd-days" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
+          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Dias</span>
+        </div>
+        <span class="font-headline text-3xl sm:text-5xl text-nucleo-gold/40 self-start">:</span>
+        <div class="text-center">
+          <span id="cd-hours" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
+          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Horas</span>
+        </div>
+        <span class="font-headline text-3xl sm:text-5xl text-nucleo-gold/40 self-start">:</span>
+        <div class="text-center">
+          <span id="cd-minutes" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
+          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Min</span>
+        </div>
+        <span class="font-headline text-3xl sm:text-5xl text-nucleo-gold/40 self-start">:</span>
+        <div class="text-center">
+          <span id="cd-seconds" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
+          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Seg</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <h2 class="font-headline font-bold text-2xl text-nucleo-white uppercase tracking-wide mb-8">
+      Reportagens
+    </h2>
+    {copaArticles.length > 0 ? (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {copaArticles.map((article) => (
+          <ArticleCard
+            title={article.data.title}
+            excerpt={article.data.excerpt}
+            category={article.data.category}
+            coverImage={article.data.coverImage}
+            href={`/reportagens/${article.slug}`}
+            date={article.data.date}
+            size="md"
+          />
+        ))}
+      </div>
+    ) : (
+      <p class="text-nucleo-white/50">Em breve, novas reportagens sobre a Copa Feminina 2027.</p>
+    )}
+  </section>
+</BaseLayout>
+
+<script>
+  function initCountdown() {
+    const container = document.getElementById('countdown');
+    if (!container) return;
+
+    const target = new Date(container.dataset.target ?? '');
+    const daysEl = document.getElementById('cd-days');
+    const hoursEl = document.getElementById('cd-hours');
+    const minutesEl = document.getElementById('cd-minutes');
+    const secondsEl = document.getElementById('cd-seconds');
+
+    function update() {
+      const now = new Date();
+      const diff = target.getTime() - now.getTime();
+
+      if (diff <= 0) {
+        if (daysEl) daysEl.textContent = '0';
+        if (hoursEl) hoursEl.textContent = '0';
+        if (minutesEl) minutesEl.textContent = '0';
+        if (secondsEl) secondsEl.textContent = '0';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      if (daysEl) daysEl.textContent = String(days);
+      if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+      if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+      if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
+    }
+
+    update();
+    setInterval(update, 1000);
+  }
+
+  initCountdown();
+  document.addEventListener('astro:page-load', initCountdown);
+</script>

@@ -1,0 +1,70 @@
+---
+import CategoryBadge from './CategoryBadge.astro';
+
+interface Props {
+  title: string;
+  excerpt: string;
+  category: string;
+  coverImage: string;
+  href: string;
+  date: Date;
+  size?: 'lg' | 'md' | 'sm';
+}
+
+const { title, excerpt, category, coverImage, href, date, size = 'md' } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('pt-BR', {
+  day: '2-digit',
+  month: 'short',
+  year: 'numeric',
+});
+
+const sizeClasses = {
+  lg: {
+    wrapper: 'col-span-1 md:col-span-2 row-span-2',
+    image: 'aspect-[4/3] md:aspect-auto md:h-full min-h-[280px]',
+    title: 'text-xl sm:text-2xl lg:text-3xl',
+    showExcerpt: true,
+  },
+  md: {
+    wrapper: 'col-span-1',
+    image: 'aspect-[16/10]',
+    title: 'text-lg sm:text-xl',
+    showExcerpt: true,
+  },
+  sm: {
+    wrapper: 'col-span-1',
+    image: 'aspect-[16/10]',
+    title: 'text-base sm:text-lg',
+    showExcerpt: false,
+  },
+};
+
+const config = sizeClasses[size];
+---
+
+<article class:list={['group card-hover', config.wrapper]}>
+  <a href={href} class="block h-full bg-nucleo-black border border-white/5 overflow-hidden">
+    <div class:list={['relative overflow-hidden', config.image]}>
+      <img
+        src={coverImage}
+        alt={title}
+        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-nucleo-black/80 to-transparent opacity-60"></div>
+    </div>
+    <div class="p-4 sm:p-5">
+      <CategoryBadge category={category} />
+      <h2 class:list={['mt-2 font-headline font-bold uppercase tracking-wide text-nucleo-white leading-snug transition-colors duration-200 group-hover:text-nucleo-gold', config.title]}>
+        {title}
+      </h2>
+      {config.showExcerpt && (
+        <p class="mt-2 text-sm text-nucleo-white/60 line-clamp-2">{excerpt}</p>
+      )}
+      <time datetime={date.toISOString()} class="mt-3 block text-xs text-nucleo-white/40 uppercase tracking-wider">
+        {formattedDate}
+      </time>
+    </div>
+  </a>
+</article>
