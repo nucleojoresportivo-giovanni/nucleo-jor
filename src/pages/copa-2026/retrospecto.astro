@@ -1,0 +1,104 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const edicoes = [
+  { ano: 1930, sede: 'Uruguai', campeao: 'Uruguai', vice: 'Argentina', artilheiro: 'Guillermo Stábile (ARG)', gols: 8 },
+  { ano: 1934, sede: 'Itália', campeao: 'Itália', vice: 'Tchecoslováquia', artilheiro: 'Oldřich Nejedlý (TCH)', gols: 5 },
+  { ano: 1938, sede: 'França', campeao: 'Itália', vice: 'Hungria', artilheiro: 'Leônidas (BRA)', gols: 7 },
+  { ano: 1950, sede: 'Brasil', campeao: 'Uruguai', vice: 'Brasil', artilheiro: 'Ademir (BRA)', gols: 9 },
+  { ano: 1954, sede: 'Suíça', campeao: 'Alemanha Oc.', vice: 'Hungria', artilheiro: 'Sándor Kocsis (HUN)', gols: 11 },
+  { ano: 1958, sede: 'Suécia', campeao: 'Brasil', vice: 'Suécia', artilheiro: 'Just Fontaine (FRA)', gols: 13 },
+  { ano: 1962, sede: 'Chile', campeao: 'Brasil', vice: 'Tchecoslováquia', artilheiro: 'Garrincha / Vavá / Sánchez / Albert', gols: 4 },
+  { ano: 1966, sede: 'Inglaterra', campeao: 'Inglaterra', vice: 'Alemanha Oc.', artilheiro: 'Eusébio (POR)', gols: 9 },
+  { ano: 1970, sede: 'México', campeao: 'Brasil', vice: 'Itália', artilheiro: 'Gerd Müller (ALE)', gols: 10 },
+  { ano: 1974, sede: 'Alemanha Oc.', campeao: 'Alemanha Oc.', vice: 'Holanda', artilheiro: 'Grzegorz Lato (POL)', gols: 7 },
+  { ano: 1978, sede: 'Argentina', campeao: 'Argentina', vice: 'Holanda', artilheiro: 'Mario Kempes (ARG)', gols: 6 },
+  { ano: 1982, sede: 'Espanha', campeao: 'Itália', vice: 'Alemanha Oc.', artilheiro: 'Paolo Rossi (ITA)', gols: 6 },
+  { ano: 1986, sede: 'México', campeao: 'Argentina', vice: 'Alemanha Oc.', artilheiro: 'Gary Lineker (ING)', gols: 6 },
+  { ano: 1990, sede: 'Itália', campeao: 'Alemanha Oc.', vice: 'Argentina', artilheiro: 'Salvatore Schillaci (ITA)', gols: 6 },
+  { ano: 1994, sede: 'EUA', campeao: 'Brasil', vice: 'Itália', artilheiro: 'Stoichkov / Salenko', gols: 6 },
+  { ano: 1998, sede: 'França', campeao: 'França', vice: 'Brasil', artilheiro: 'Davor Šuker (CRO)', gols: 6 },
+  { ano: 2002, sede: 'Japão/Coreia', campeao: 'Brasil', vice: 'Alemanha', artilheiro: 'Ronaldo (BRA)', gols: 8 },
+  { ano: 2006, sede: 'Alemanha', campeao: 'Itália', vice: 'França', artilheiro: 'Miroslav Klose (ALE)', gols: 5 },
+  { ano: 2010, sede: 'África do Sul', campeao: 'Espanha', vice: 'Holanda', artilheiro: 'Müller / Sneijder / Villa / Forlán', gols: 5 },
+  { ano: 2014, sede: 'Brasil', campeao: 'Alemanha', vice: 'Argentina', artilheiro: 'James Rodríguez (COL)', gols: 6 },
+  { ano: 2018, sede: 'Rússia', campeao: 'França', vice: 'Croácia', artilheiro: 'Harry Kane (ING)', gols: 6 },
+  { ano: 2022, sede: 'Catar', campeao: 'Argentina', vice: 'França', artilheiro: 'Kylian Mbappé (FRA)', gols: 8 },
+];
+
+const recordes = [
+  { label: 'Mais títulos', valor: 'Brasil (5) e Itália (4)' },
+  { label: 'Maior artilheiro histórico', valor: 'Miroslav Klose (ALE) — 16 gols' },
+  { label: 'Gol mais rápido', valor: 'Hakan Şükür (TUR) — 11 segundos, 2002' },
+  { label: 'Maior goleada', valor: 'Hungria 10 × 1 El Salvador, 1982' },
+  { label: 'Sempre presente', valor: 'Brasil — única seleção em todas as 22 edições' },
+  { label: 'Copa 2026', valor: 'Primeira edição com 48 seleções' },
+];
+---
+
+<Layout title="Retrospecto Histórico — Copa do Mundo | Núcleo">
+  <main class="min-h-screen bg-nucleo-black pt-[68px]">
+
+    <!-- Hero -->
+    <section class="border-b border-nucleo-gold/20 py-16 px-4">
+      <div class="max-w-5xl mx-auto">
+        <p class="text-nucleo-gold text-xs tracking-[3px] uppercase mb-4">Copa do Mundo FIFA</p>
+        <h1 class="font-headline font-bold text-5xl md:text-7xl text-nucleo-white uppercase leading-none mb-4">
+          Retrospecto<br />Histórico
+        </h1>
+        <p class="text-nucleo-white/50 text-base max-w-xl">
+          Todas as edições desde 1930. A maior competição do planeta em números, campeões e artilheiros.
+        </p>
+      </div>
+    </section>
+
+    <!-- Recordes -->
+    <section class="border-b border-nucleo-gold/20 py-10 px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="font-headline font-bold text-nucleo-gold text-xs tracking-[3px] uppercase mb-6">Recordes</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {recordes.map((r) => (
+            <div class="border border-nucleo-gold/30 bg-nucleo-gold/5 p-4">
+              <p class="text-nucleo-gold text-[10px] tracking-widest uppercase mb-1">{r.label}</p>
+              <p class="text-nucleo-white font-headline font-bold text-lg leading-tight">{r.valor}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabela -->
+    <section class="py-10 px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="font-headline font-bold text-nucleo-gold text-xs tracking-[3px] uppercase mb-6">Todas as Edições</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left border-collapse">
+            <thead>
+              <tr class="border-b border-nucleo-gold/40">
+                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Ano</th>
+                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Sede</th>
+                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Campeão</th>
+                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Vice</th>
+                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Artilheiro</th>
+                <th class="py-3 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Gols</th>
+              </tr>
+            </thead>
+            <tbody>
+              {edicoes.map((e, i) => (
+                <tr class:list={['border-b border-white/5 transition-colors hover:bg-white/3', i % 2 === 0 ? '' : 'bg-white/[0.02]']}>
+                  <td class="py-3 pr-6 font-headline font-bold text-nucleo-gold text-base">{e.ano}</td>
+                  <td class="py-3 pr-6 text-nucleo-white/70">{e.sede}</td>
+                  <td class="py-3 pr-6 text-nucleo-white font-medium">{e.campeao}</td>
+                  <td class="py-3 pr-6 text-nucleo-white/60">{e.vice}</td>
+                  <td class="py-3 pr-6 text-nucleo-white/60 text-xs">{e.artilheiro}</td>
+                  <td class="py-3 text-nucleo-gold font-bold">{e.gols}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Layout>

@@ -142,6 +142,8 @@ export const categoryColors: Record<string, string> = {
 export const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/reportagens', label: 'Reportagens' },
+  { href: '/copa-2026/selecoes', label: 'Seleções Copa 2026' },
+  { href: '/copa-2026/retrospecto', label: 'Retrospecto' },
   { href: '/copa-feminina-2027', label: 'Copa Feminina 2027' },
   { href: '/especiais', label: 'Especiais' },
   { href: '/radio-ufsc', label: 'Rádio UFSC' },

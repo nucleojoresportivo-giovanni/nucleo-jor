@@ -5,12 +5,12 @@ const LOGO_BASE = '/logos/copa2026';
 ---
 
 <section class="groups-slider border-y border-nucleo-gold/40 bg-nucleo-black" aria-label="Grupos da Copa do Mundo 2026">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-    <h2 class="font-headline font-bold text-nucleo-gold text-sm sm:text-base uppercase tracking-[0.15em] text-center mb-3">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+    <h2 class="font-headline font-bold text-nucleo-gold text-sm sm:text-base uppercase tracking-[0.15em] text-center mb-4">
       Copa do Mundo 2026 · Grupos
     </h2>
 
-    <div class="relative flex items-center gap-2 sm:gap-4 max-h-[160px]">
+    <div class="relative flex items-center gap-2 sm:gap-4 max-h-[220px]">
       <!-- Prev -->
       <button
         type="button"
@@ -32,24 +32,26 @@ const LOGO_BASE = '/logos/copa2026';
         {
           worldCupGroups.map((group) => (
             <div
-              class="groups-slide flex-shrink-0 w-full snap-start flex flex-col items-center justify-center py-2"
+              class="groups-slide flex-shrink-0 w-full min-w-[260px] snap-start flex flex-col items-center justify-center py-3"
               data-group={group.id}
             >
-              <p class="font-headline text-nucleo-gold/80 text-xs uppercase tracking-widest mb-2">
+              <p class="group-name font-headline text-nucleo-gold/80 text-[14px] uppercase tracking-widest mb-3">
                 {group.label}
               </p>
-              <div class="flex items-end justify-center gap-4 sm:gap-8 md:gap-12">
+              <div class="flags-row flex items-end justify-center gap-[18px]">
                 {group.teams.map((team) => (
-                  <div class="flex flex-col items-center gap-1.5 min-w-[52px] sm:min-w-[64px]">
-                    <img
-                      src={`${LOGO_BASE}/${team.logo}`}
-                      alt={`Logo ${team.name}`}
-                      class="h-10 sm:h-12 w-auto object-contain"
-                      loading="lazy"
-                      width="48"
-                      height="48"
-                    />
-                    <span class="text-[11px] text-nucleo-white text-center leading-tight max-w-[72px]">
+                  <div class="flex flex-col items-center gap-2 min-w-[64px] sm:min-w-[72px]">
+                    <div class="flag-circle flex h-[52px] w-[52px] items-center justify-center">
+                      <img
+                        src={`${LOGO_BASE}/${team.logo}`}
+                        alt={`Logo ${team.name}`}
+                        class="h-[52px] w-[52px] object-contain"
+                        loading="lazy"
+                        width="52"
+                        height="52"
+                      />
+                    </div>
+                    <span class="flag-name text-[11px] text-nucleo-white text-center leading-tight max-w-[80px]">
                       {team.name}
                     </span>
                   </div>
@@ -74,7 +76,7 @@ const LOGO_BASE = '/logos/copa2026';
     </div>
 
     <!-- Indicators -->
-    <div id="groups-indicators" class="flex justify-center gap-1.5 mt-3" role="tablist" aria-label="Indicadores de grupo">
+    <div id="groups-indicators" class="flex justify-center gap-1.5 mt-4" role="tablist" aria-label="Indicadores de grupo">
       {
         worldCupGroups.map((group, i) => (
           <button
@@ -104,6 +106,12 @@ const LOGO_BASE = '/logos/copa2026';
 
   .groups-slide {
     scroll-snap-align: start;
+  }
+
+  .flag-circle img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
   }
 
   .groups-indicator.active {

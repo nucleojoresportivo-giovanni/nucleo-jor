@@ -6,16 +6,20 @@ const currentPath = Astro.url.pathname;
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-nucleo-black/95 backdrop-blur-sm border-b border-nucleo-gold/20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
+    <div class="flex items-center justify-between h-[68px]">
       <!-- Logo -->
-      <a href="/" class="group transition-opacity duration-200 hover:opacity-80">
-        <img
-          src="/logo-nucleo.png"
-          alt="Núcleo — Jornalismo Esportivo UFSC"
-          class="h-8 sm:h-9 w-auto"
-          width="180"
-          height="36"
-        />
+      <a
+        href="/"
+        class="group flex items-stretch border-l-[3px] border-nucleo-gold pl-3 leading-none transition-opacity duration-200 hover:opacity-80"
+      >
+        <div class="flex flex-col justify-center">
+          <span class="font-headline font-bold text-[32px] text-nucleo-gold tracking-wide uppercase">
+            NÚCLEO
+          </span>
+          <span class="text-[12px] tracking-[0.28em] text-nucleo-white/70 uppercase mt-1">
+            Jornalismo Esportivo UFSC
+          </span>
+        </div>
       </a>
 
       <!-- Desktop Nav -->
