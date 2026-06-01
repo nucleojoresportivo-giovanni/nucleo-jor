@@ -41,14 +41,14 @@ const LOGO_BASE = '/logos/copa2026';
               <div class="flags-row flex items-end justify-center gap-[18px]">
                 {group.teams.map((team) => (
                   <div class="flex flex-col items-center gap-2 min-w-[64px] sm:min-w-[72px]">
-                    <div class="flag-circle flex h-[52px] w-[52px] items-center justify-center">
+                    <div class="flag-circle flex h-[72px] w-[72px] items-center justify-center">
                       <img
                         src={`${LOGO_BASE}/${team.logo}`}
                         alt={`Logo ${team.name}`}
-                        class="h-[52px] w-[52px] object-contain"
+                        class="h-[72px] w-[72px] object-contain"
                         loading="lazy"
-                        width="52"
-                        height="52"
+                        width="72"
+                        height="72"
                       />
                     </div>
                     <span class="flag-name text-[11px] text-nucleo-white text-center leading-tight max-w-[80px]">
@@ -109,8 +109,8 @@ const LOGO_BASE = '/logos/copa2026';
   }
 
   .flag-circle img {
-    width: 52px;
-    height: 52px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
   }
 

@@ -12,9 +12,9 @@ export default {
         },
       },
       fontFamily: {
-        headline: ['"Barlow Condensed"', 'sans-serif'],
-        body: ['"DM Sans"', 'sans-serif'],
-        editorial: ['"Playfair Display"', 'serif'],
+        headline: ['"Cabinet Grotesk"', 'sans-serif'],
+        body: ['"Cabinet Grotesk"', 'sans-serif'],
+        editorial: ['"Cabinet Grotesk"', 'sans-serif'],
       },
       transitionDuration: {
         DEFAULT: '250ms',
