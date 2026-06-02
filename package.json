@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/": "^6.0.2",
+    "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.7.10",
     "css": "^3.4.17"
   }
