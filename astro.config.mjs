@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import  from '@astrojs/';
 
 export default defineConfig({
   site: 'https://nucleo-ufsc.vercel.app',
-  integrations: [tailwind()],
+  integrations: [()],
 });

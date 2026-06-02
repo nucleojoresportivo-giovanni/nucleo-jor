@@ -1,5 +1,6 @@
 ---
 import { worldCupGroups } from '@/data/site';
+import { selecoes } from '@/data/selecoes';
 
 const LOGO_BASE = '/logos/copa2026';
 ---
@@ -39,22 +40,25 @@ const LOGO_BASE = '/logos/copa2026';
                 {group.label}
               </p>
               <div class="flags-row flex items-end justify-center gap-[18px]">
-                {group.teams.map((team) => (
-                  <div class="flex flex-col items-center gap-2 min-w-[64px] sm:min-w-[72px]">
-                    <div class="flag-circle flex h-[72px] w-[72px] items-center justify-center">
-                      <img
-                        src={`${LOGO_BASE}/${team.logo}`}
-                        alt={`Logo ${team.name}`}
-                        class="h-[72px] w-[72px] object-contain"
-                        loading="lazy"
-                        width="72"
-                        height="72"
-                      />
-                    </div>
-                    <span class="flag-name text-[11px] text-nucleo-white text-center leading-tight max-w-[80px]">
-                      {team.name}
-                    </span>
-                  </div>
+               {group.teams.map((team) => (
+  <div
+    class="flex flex-col items-center gap-2 min-w-[64px] sm:min-w-[72px] cursor-pointer group/flag"
+    onclick={`openSliderModal('${team.name}')`}
+  >
+    <div class="flag-circle flex h-[72px] w-[72px] items-center justify-center">
+      <img
+        src={`${LOGO_BASE}/${team.logo}`}
+        alt={`Logo ${team.name}`}
+        class="h-[72px] w-[72px] object-contain transition-transform duration-200 group-hover/flag:scale-110"
+        loading="lazy"
+        width="72"
+        height="72"
+      />
+    </div>
+    <span class="flag-name text-[11px] text-nucleo-white text-center leading-tight max-w-[80px]">
+      {team.name}
+    </span>
+  </div>
                 ))}
               </div>
             </div>
@@ -92,6 +96,119 @@ const LOGO_BASE = '/logos/copa2026';
     </div>
   </div>
 </section>
+
+<!-- Modal do Slider -->
+<div
+  id="slider-modal-overlay"
+  class="fixed inset-0 z-[100] bg-black/85 hidden items-center justify-center p-4"
+  onclick="closeSliderModal(event)"
+>
+  <div
+    id="slider-modal-box"
+    class="relative w-full max-w-lg bg-[#111] border border-nucleo-gold/30 overflow-hidden max-h-[90vh] overflow-y-auto"
+  >
+    <div class="relative h-[200px] bg-[#1a1a1a] flex items-end">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img id="slider-modal-logo" src="" alt="" class="w-24 h-24 object-contain opacity-30" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent"></div>
+      <div class="relative z-10 p-6">
+        <span id="slider-modal-grupo" class="text-nucleo-gold text-[10px] tracking-[3px] uppercase mb-1 block"></span>
+        <h3 id="slider-modal-name" class="font-headline font-bold text-3xl text-nucleo-white uppercase"></h3>
+      </div>
+    </div>
+    <button
+      onclick="closeSliderModalDirect()"
+      class="absolute top-3 right-3 z-20 text-nucleo-gold hover:text-white transition-colors text-2xl leading-none w-8 h-8 flex items-center justify-center"
+      aria-label="Fechar"
+    >✕</button>
+    <div class="p-6 space-y-4">
+      <div class="grid grid-cols-2 gap-3">
+        <div class="bg-white/5 p-3">
+          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Técnico</p>
+          <p id="slider-modal-tecnico" class="text-nucleo-white text-sm font-medium"></p>
+        </div>
+        <div class="bg-white/5 p-3">
+          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">1ª Copa</p>
+          <p id="slider-modal-primeira" class="text-nucleo-white text-sm font-medium"></p>
+        </div>
+        <div class="bg-white/5 p-3">
+          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Melhor resultado</p>
+          <p id="slider-modal-melhor" class="text-nucleo-white text-sm font-medium"></p>
+        </div>
+        <div class="bg-white/5 p-3">
+          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Maior artilheiro</p>
+          <p id="slider-modal-artilheiro" class="text-nucleo-white text-sm font-medium"></p>
+        </div>
+      </div>
+      <div class="bg-white/5 p-3">
+        <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Eliminatórias</p>
+        <p id="slider-modal-elim" class="text-nucleo-white text-sm"></p>
+      </div>
+      <div class="bg-nucleo-gold/10 border border-nucleo-gold/20 p-3">
+        <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Curiosidade</p>
+        <p id="slider-modal-curiosidade" class="text-nucleo-white/80 text-sm leading-relaxed"></p>
+      </div>
+      <div id="slider-modal-conv-wrap" class="bg-white/5 p-3">
+        <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Convocação</p>
+        <p id="slider-modal-convocacao" class="text-nucleo-white/70 text-xs leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ selecoes }}>
+  function openSliderModal(name) {
+    const s = selecoes.find(x => x.name === name);
+    if (!s) return;
+
+    document.getElementById('slider-modal-name').textContent = s.name;
+    document.getElementById('slider-modal-grupo').textContent = `Grupo ${s.grupo}`;
+    document.getElementById('slider-modal-tecnico').textContent = s.tecnico;
+    document.getElementById('slider-modal-primeira').textContent = s.primeira;
+    document.getElementById('slider-modal-melhor').textContent = s.melhor;
+    document.getElementById('slider-modal-artilheiro').textContent = s.artilheiro;
+    document.getElementById('slider-modal-elim').textContent = s.eliminatorias;
+    document.getElementById('slider-modal-curiosidade').textContent = s.curiosidade;
+
+    const logoEl = document.getElementById('slider-modal-logo');
+    logoEl.src = `/logos/copa2026/${s.logo}`;
+    logoEl.alt = s.name;
+
+    const convWrap = document.getElementById('slider-modal-conv-wrap');
+    const convEl = document.getElementById('slider-modal-convocacao');
+    if (s.convocacao) {
+      convEl.textContent = s.convocacao;
+      convWrap.style.display = 'block';
+    } else {
+      convWrap.style.display = 'none';
+    }
+
+    const overlay = document.getElementById('slider-modal-overlay');
+    overlay.classList.remove('hidden');
+    overlay.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSliderModalDirect() {
+    const overlay = document.getElementById('slider-modal-overlay');
+    overlay.classList.add('hidden');
+    overlay.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  function closeSliderModal(e) {
+    if (e.target === document.getElementById('slider-modal-overlay')) closeSliderModalDirect();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSliderModalDirect();
+  });
+
+  window.openSliderModal = openSliderModal;
+  window.closeSliderModal = closeSliderModal;
+  window.closeSliderModalDirect = closeSliderModalDirect;
+</script>
 
 <style>
   .groups-track {

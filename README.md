@@ -2,12 +2,12 @@
 
 Portal de jornalismo esportivo produzido por estudantes do curso de Jornalismo da Universidade Federal de Santa Catarina.
 
-Construído com **Astro** + **Tailwind CSS**, pronto para deploy na **Vercel**.
+Construído com **Astro** + ** CSS**, pronto para deploy na **Vercel**.
 
 ## Stack
 
 - [Astro 5](https://astro.build) — framework estático
-- [Tailwind CSS 3](https://tailwindcss.com) — estilização
+- [ CSS 3](https://css.com) — estilização
 - Content Collections — reportagens em Markdown
 - Deploy: Vercel (static)
 
@@ -75,7 +75,7 @@ src/
 ├── data/             # Dados dos grupos Copa 2026, nav links
 ├── layouts/          # BaseLayout.astro
 ├── pages/            # Rotas do site
-└── styles/           # global.css + Tailwind
+└── styles/           # global.css + 
 public/
 ├── logos/copa2026/   # Logos das seleções (PNG)
 └── images/           # Capas e assets
