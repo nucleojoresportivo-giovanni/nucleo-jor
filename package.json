@@ -13,5 +13,8 @@
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.7.10"
+  },
+  "engines": {
+    "node": ">=18.17.1"
   }
 }
