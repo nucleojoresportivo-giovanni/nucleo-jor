@@ -4,6 +4,6 @@ import keystatic from '@keystatic/astro';
 
 export default defineConfig({
   site: 'https://nucleo-ufsc.vercel.app',
-  output: 'hybrid',
+  output: 'server',
   integrations: [tailwind(), keystatic()],
 });
