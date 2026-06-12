@@ -1,4 +1,4 @@
-export interface GroupTeam {
+﻿export interface GroupTeam {
   name: string;
   logo: string;
 }
@@ -133,10 +133,10 @@ export const worldCupGroups: WorldCupGroup[] = [
 ];
 
 export const categoryColors: Record<string, string> = {
-  'Copa Feminina 2027': 'bg-nucleo-gold text-nucleo-black',
-  Futebol: 'bg-emerald-700 text-white',
-  Esportes: 'bg-blue-700 text-white',
-  Especial: 'bg-purple-700 text-white',
+  'Copa Feminina 2027': 'bg-ixporte-red text-ixporte-black',
+  Futebol: 'bg-ixporte-crimson text-white',
+  Esportes: 'bg-ixporte-purple text-white',
+  Especial: 'bg-ixporte-purple-deep text-white',
 };
 
 export const navLinks = [

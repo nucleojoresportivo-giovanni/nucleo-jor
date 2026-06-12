@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import CategoryBadge from '@/components/CategoryBadge.astro';
 import { getCollection } from 'astro:content';
@@ -29,13 +29,13 @@ const formattedDate = entry.data.date.toLocaleDateString('pt-BR', {
   <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
     <header class="mb-10">
       <CategoryBadge category={entry.data.category} />
-      <h1 class="mt-4 font-headline font-bold text-3xl sm:text-4xl lg:text-5xl text-nucleo-white uppercase tracking-wide leading-tight">
+      <h1 class="mt-4 font-headline font-bold text-3xl sm:text-4xl lg:text-5xl text-ixporte-white uppercase tracking-wide leading-tight">
         {entry.data.title}
       </h1>
-      <p class="mt-4 font-editorial italic text-lg text-nucleo-white/70">
+      <p class="mt-4 font-editorial italic text-lg text-ixporte-white/70">
         {entry.data.excerpt}
       </p>
-      <div class="mt-6 flex items-center gap-4 text-sm text-nucleo-white/50">
+      <div class="mt-6 flex items-center gap-4 text-sm text-ixporte-white/50">
         <span>Por {entry.data.author}</span>
         <span aria-hidden="true">·</span>
         <time datetime={entry.data.date.toISOString()}>{formattedDate}</time>
@@ -50,17 +50,17 @@ const formattedDate = entry.data.date.toLocaleDateString('pt-BR', {
     />
 
     <div class="prose prose-invert prose-lg max-w-none
-      prose-headings:font-headline prose-headings:uppercase prose-headings:tracking-wide prose-headings:text-nucleo-white
-      prose-p:text-nucleo-white/80 prose-p:leading-relaxed
-      prose-a:text-nucleo-gold prose-a:no-underline hover:prose-a:underline
-      prose-blockquote:border-nucleo-gold prose-blockquote:text-nucleo-white/70 prose-blockquote:font-editorial prose-blockquote:italic
-      prose-strong:text-nucleo-white
-      prose-li:text-nucleo-white/80">
+      prose-headings:font-headline prose-headings:uppercase prose-headings:tracking-wide prose-headings:text-ixporte-white
+      prose-p:text-ixporte-white/80 prose-p:leading-relaxed
+      prose-a:text-ixporte-red prose-a:no-underline hover:prose-a:underline
+      prose-blockquote:border-ixporte-red prose-blockquote:text-ixporte-white/70 prose-blockquote:font-editorial prose-blockquote:italic
+      prose-strong:text-ixporte-white
+      prose-li:text-ixporte-white/80">
       <Content />
     </div>
 
     <footer class="mt-12 pt-8 border-t border-white/10">
-      <a href="/reportagens" class="text-nucleo-gold hover:text-nucleo-white transition-colors duration-200 text-sm uppercase tracking-wider">
+      <a href="/reportagens" class="text-ixporte-red hover:text-ixporte-white transition-colors duration-200 text-sm uppercase tracking-wider">
         ← Voltar para reportagens
       </a>
     </footer>

@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ArticleCard from '@/components/ArticleCard.astro';
 import CopaBanner from '@/components/CopaBanner.astro';
@@ -16,44 +16,44 @@ const targetDate = new Date('2027-07-01T00:00:00-03:00');
   description="Cobertura especial da Copa do Mundo Feminina 2027, sediada no Brasil. Reportagens, análises e contagem regressiva."
 >
   <!-- Hero Banner -->
-  <section class="relative bg-nucleo-gold overflow-hidden">
+  <section class="relative bg-ixporte-red overflow-hidden">
     <div class="absolute inset-0 opacity-10 bg-[repeating-linear-gradient(-45deg,transparent,transparent_20px,rgba(0,0,0,0.08)_20px,rgba(0,0,0,0.08)_40px)]"></div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-      <span class="text-nucleo-black/50 text-xs uppercase tracking-[0.25em]">Seção Especial</span>
-      <h1 class="mt-4 font-headline font-bold text-4xl sm:text-5xl lg:text-6xl text-nucleo-black uppercase tracking-wide leading-none">
+      <span class="text-ixporte-black/50 text-xs uppercase tracking-[0.25em]">Seção Especial</span>
+      <h1 class="mt-4 font-headline font-bold text-4xl sm:text-5xl lg:text-6xl text-ixporte-black uppercase tracking-wide leading-none">
         Copa do Mundo<br />Feminina 2027
       </h1>
-      <p class="mt-6 font-editorial italic text-nucleo-black/70 text-lg sm:text-xl max-w-2xl">
+      <p class="mt-6 font-editorial italic text-ixporte-black/70 text-lg sm:text-xl max-w-2xl">
         Pela primeira vez, o Brasil sediará o maior torneio de futebol feminino do planeta.
       </p>
     </div>
   </section>
 
   <!-- Countdown -->
-  <section class="border-y border-nucleo-gold/30 bg-nucleo-black">
+  <section class="border-y border-ixporte-red/30 bg-ixporte-black">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <h2 class="font-headline text-nucleo-gold text-sm uppercase tracking-[0.2em] text-center mb-6">
+      <h2 class="font-headline text-ixporte-red text-sm uppercase tracking-[0.2em] text-center mb-6">
         Contagem Regressiva
       </h2>
       <div id="countdown" class="flex justify-center gap-4 sm:gap-8" data-target={targetDate.toISOString()}>
         <div class="text-center">
-          <span id="cd-days" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
-          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Dias</span>
+          <span id="cd-days" class="block font-headline font-bold text-3xl sm:text-5xl text-ixporte-white">--</span>
+          <span class="text-xs text-ixporte-white/50 uppercase tracking-wider mt-1">Dias</span>
         </div>
-        <span class="font-headline text-3xl sm:text-5xl text-nucleo-gold/40 self-start">:</span>
+        <span class="font-headline text-3xl sm:text-5xl text-ixporte-red/40 self-start">:</span>
         <div class="text-center">
-          <span id="cd-hours" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
-          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Horas</span>
+          <span id="cd-hours" class="block font-headline font-bold text-3xl sm:text-5xl text-ixporte-white">--</span>
+          <span class="text-xs text-ixporte-white/50 uppercase tracking-wider mt-1">Horas</span>
         </div>
-        <span class="font-headline text-3xl sm:text-5xl text-nucleo-gold/40 self-start">:</span>
+        <span class="font-headline text-3xl sm:text-5xl text-ixporte-red/40 self-start">:</span>
         <div class="text-center">
-          <span id="cd-minutes" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
-          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Min</span>
+          <span id="cd-minutes" class="block font-headline font-bold text-3xl sm:text-5xl text-ixporte-white">--</span>
+          <span class="text-xs text-ixporte-white/50 uppercase tracking-wider mt-1">Min</span>
         </div>
-        <span class="font-headline text-3xl sm:text-5xl text-nucleo-gold/40 self-start">:</span>
+        <span class="font-headline text-3xl sm:text-5xl text-ixporte-red/40 self-start">:</span>
         <div class="text-center">
-          <span id="cd-seconds" class="block font-headline font-bold text-3xl sm:text-5xl text-nucleo-white">--</span>
-          <span class="text-xs text-nucleo-white/50 uppercase tracking-wider mt-1">Seg</span>
+          <span id="cd-seconds" class="block font-headline font-bold text-3xl sm:text-5xl text-ixporte-white">--</span>
+          <span class="text-xs text-ixporte-white/50 uppercase tracking-wider mt-1">Seg</span>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@ const targetDate = new Date('2027-07-01T00:00:00-03:00');
 
   <!-- Articles -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-    <h2 class="font-headline font-bold text-2xl text-nucleo-white uppercase tracking-wide mb-8">
+    <h2 class="font-headline font-bold text-2xl text-ixporte-white uppercase tracking-wide mb-8">
       Reportagens
     </h2>
     {copaArticles.length > 0 ? (
@@ -79,7 +79,7 @@ const targetDate = new Date('2027-07-01T00:00:00-03:00');
         ))}
       </div>
     ) : (
-      <p class="text-nucleo-white/50">Em breve, novas reportagens sobre a Copa Feminina 2027.</p>
+      <p class="text-ixporte-white/50">Em breve, novas reportagens sobre a Copa Feminina 2027.</p>
     )}
   </section>
 </BaseLayout>

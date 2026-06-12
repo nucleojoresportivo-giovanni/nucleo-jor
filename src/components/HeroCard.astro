@@ -1,4 +1,4 @@
----
+﻿---
 import CategoryBadge from './CategoryBadge.astro';
 
 interface Props {
@@ -28,17 +28,17 @@ const formattedDate = date.toLocaleDateString('pt-BR', {
       loading="eager"
       fetchpriority="high"
     />
-    <div class="absolute inset-0 bg-gradient-to-t from-nucleo-black via-nucleo-black/60 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ixporte-black via-ixporte-black/60 to-transparent"></div>
 
     <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 lg:p-12">
       <CategoryBadge category={category} />
-      <h1 class="mt-4 font-headline font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-nucleo-white leading-tight tracking-normal max-w-4xl transition-colors duration-200 group-hover:text-nucleo-gold">
+      <h1 class="mt-4 font-headline font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-ixporte-white leading-tight tracking-normal max-w-4xl transition-colors duration-200 group-hover:text-ixporte-red">
         {title}
       </h1>
-      <p class="mt-4 font-editorial italic text-nucleo-white/80 text-lg sm:text-xl max-w-2xl line-clamp-2">
+      <p class="mt-4 font-editorial italic text-ixporte-white/80 text-lg sm:text-xl max-w-2xl line-clamp-2">
         {excerpt}
       </p>
-      <time datetime={date.toISOString()} class="mt-4 block text-sm text-nucleo-white/50">
+      <time datetime={date.toISOString()} class="mt-4 block text-sm text-ixporte-white/50">
         {formattedDate}
       </time>
     </div>

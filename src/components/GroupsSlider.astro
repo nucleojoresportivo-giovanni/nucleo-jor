@@ -1,13 +1,13 @@
----
+﻿---
 import { worldCupGroups } from '@/data/site';
 import { selecoes } from '@/data/selecoes';
 
 const LOGO_BASE = '/logos/copa2026';
 ---
 
-<section class="groups-slider border-y border-nucleo-gold/40 bg-nucleo-black" aria-label="Grupos da Copa do Mundo 2026">
+<section class="groups-slider border-y border-ixporte-red/40 bg-ixporte-black" aria-label="Grupos da Copa do Mundo 2026">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-    <h2 class="font-headline font-bold text-nucleo-gold text-sm sm:text-base uppercase tracking-[0.15em] text-center mb-4">
+    <h2 class="font-headline font-bold text-ixporte-red text-sm sm:text-base uppercase tracking-[0.15em] text-center mb-4">
       Copa do Mundo 2026 · Grupos
     </h2>
 
@@ -16,7 +16,7 @@ const LOGO_BASE = '/logos/copa2026';
       <button
         type="button"
         id="groups-prev"
-        class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-nucleo-gold hover:text-nucleo-white transition-colors duration-200"
+        class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-ixporte-red hover:text-ixporte-white transition-colors duration-200"
         aria-label="Grupo anterior"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
@@ -36,7 +36,7 @@ const LOGO_BASE = '/logos/copa2026';
               class="groups-slide flex-shrink-0 w-full min-w-[260px] snap-start flex flex-col items-center justify-center py-3"
               data-group={group.id}
             >
-              <p class="group-name font-headline text-nucleo-gold/80 text-[14px] uppercase tracking-widest mb-3">
+              <p class="group-name font-headline text-ixporte-red/80 text-[14px] uppercase tracking-widest mb-3">
                 {group.label}
               </p>
               <div class="flags-row flex items-end justify-center gap-[18px]">
@@ -55,7 +55,7 @@ const LOGO_BASE = '/logos/copa2026';
         height="112"
       />
     </div>
-    <span class="flag-name text-[11px] text-nucleo-white text-center leading-tight max-w-[80px]">
+    <span class="flag-name text-[11px] text-ixporte-white text-center leading-tight max-w-[80px]">
       {team.name}
     </span>
   </div>
@@ -70,7 +70,7 @@ const LOGO_BASE = '/logos/copa2026';
       <button
         type="button"
         id="groups-next"
-        class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-nucleo-gold hover:text-nucleo-white transition-colors duration-200"
+        class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-ixporte-red hover:text-ixporte-white transition-colors duration-200"
         aria-label="Próximo grupo"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
@@ -85,7 +85,7 @@ const LOGO_BASE = '/logos/copa2026';
         worldCupGroups.map((group, i) => (
           <button
             type="button"
-            class="groups-indicator h-0.5 w-4 sm:w-5 bg-nucleo-gold/25 transition-all duration-300 rounded-full"
+            class="groups-indicator h-0.5 w-4 sm:w-5 bg-ixporte-red/25 transition-all duration-300 rounded-full"
             data-index={i}
             role="tab"
             aria-label={`Grupo ${group.id}`}
@@ -105,7 +105,7 @@ const LOGO_BASE = '/logos/copa2026';
 >
   <div
     id="slider-modal-box"
-    class="relative w-full max-w-lg bg-[#111] border border-nucleo-gold/30 overflow-hidden max-h-[90vh] overflow-y-auto"
+    class="relative w-full max-w-lg bg-[#111] border border-ixporte-red/30 overflow-hidden max-h-[90vh] overflow-y-auto"
   >
     <div class="relative h-[200px] bg-[#1a1a1a] flex items-end">
       <div class="absolute inset-0 flex items-center justify-center">
@@ -113,45 +113,45 @@ const LOGO_BASE = '/logos/copa2026';
       </div>
       <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent"></div>
       <div class="relative z-10 p-6">
-        <span id="slider-modal-grupo" class="text-nucleo-gold text-[10px] tracking-[3px] uppercase mb-1 block"></span>
-        <h3 id="slider-modal-name" class="font-headline font-bold text-3xl text-nucleo-white uppercase"></h3>
+        <span id="slider-modal-grupo" class="text-ixporte-red text-[10px] tracking-[3px] uppercase mb-1 block"></span>
+        <h3 id="slider-modal-name" class="font-headline font-bold text-3xl text-ixporte-white uppercase"></h3>
       </div>
     </div>
     <button
       onclick="closeSliderModalDirect()"
-      class="absolute top-3 right-3 z-20 text-nucleo-gold hover:text-white transition-colors text-2xl leading-none w-8 h-8 flex items-center justify-center"
+      class="absolute top-3 right-3 z-20 text-ixporte-red hover:text-white transition-colors text-2xl leading-none w-8 h-8 flex items-center justify-center"
       aria-label="Fechar"
     >✕</button>
     <div class="p-6 space-y-4">
       <div class="grid grid-cols-2 gap-3">
         <div class="bg-white/5 p-3">
-          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Técnico</p>
-          <p id="slider-modal-tecnico" class="text-nucleo-white text-sm font-medium"></p>
+          <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Técnico</p>
+          <p id="slider-modal-tecnico" class="text-ixporte-white text-sm font-medium"></p>
         </div>
         <div class="bg-white/5 p-3">
-          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">1ª Copa</p>
-          <p id="slider-modal-primeira" class="text-nucleo-white text-sm font-medium"></p>
+          <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">1ª Copa</p>
+          <p id="slider-modal-primeira" class="text-ixporte-white text-sm font-medium"></p>
         </div>
         <div class="bg-white/5 p-3">
-          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Melhor resultado</p>
-          <p id="slider-modal-melhor" class="text-nucleo-white text-sm font-medium"></p>
+          <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Melhor resultado</p>
+          <p id="slider-modal-melhor" class="text-ixporte-white text-sm font-medium"></p>
         </div>
         <div class="bg-white/5 p-3">
-          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Maior artilheiro</p>
-          <p id="slider-modal-artilheiro" class="text-nucleo-white text-sm font-medium"></p>
+          <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Maior artilheiro</p>
+          <p id="slider-modal-artilheiro" class="text-ixporte-white text-sm font-medium"></p>
         </div>
       </div>
       <div class="bg-white/5 p-3">
-        <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Eliminatórias</p>
-        <p id="slider-modal-elim" class="text-nucleo-white text-sm"></p>
+        <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Eliminatórias</p>
+        <p id="slider-modal-elim" class="text-ixporte-white text-sm"></p>
       </div>
-      <div class="bg-nucleo-gold/10 border border-nucleo-gold/20 p-3">
-        <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Curiosidade</p>
-        <p id="slider-modal-curiosidade" class="text-nucleo-white/80 text-sm leading-relaxed"></p>
+      <div class="bg-ixporte-red/10 border border-ixporte-red/20 p-3">
+        <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Curiosidade</p>
+        <p id="slider-modal-curiosidade" class="text-ixporte-white/80 text-sm leading-relaxed"></p>
       </div>
       <div id="slider-modal-conv-wrap" class="bg-white/5 p-3">
-        <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Convocação</p>
-        <p id="slider-modal-convocacao" class="text-nucleo-white/70 text-xs leading-relaxed"></p>
+        <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Convocação</p>
+        <p id="slider-modal-convocacao" class="text-ixporte-white/70 text-xs leading-relaxed"></p>
       </div>
     </div>
   </div>
@@ -232,7 +232,7 @@ const LOGO_BASE = '/logos/copa2026';
   }
 
   .groups-indicator.active {
-    background-color: #C9A227;
+    background-color: #FF0000;
     width: 1.75rem;
   }
 

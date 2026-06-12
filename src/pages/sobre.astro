@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 
 const equipe = [
@@ -13,26 +13,26 @@ const equipe = [
 
 <BaseLayout
   title="Sobre"
-  description="Conheça o Núcleo — portal de jornalismo esportivo produzido por estudantes de jornalismo da UFSC."
+  description="Conheça o ixporte — portal de jornalismo esportivo produzido por estudantes de jornalismo da UFSC."
 >
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
     <header class="mb-12">
-      <h1 class="font-headline font-bold text-4xl sm:text-5xl text-nucleo-white uppercase tracking-wide">
-        Sobre o Núcleo
+      <h1 class="font-headline font-bold text-4xl sm:text-5xl text-ixporte-white uppercase tracking-wide">
+        Sobre o ixporte
       </h1>
     </header>
 
-    <div class="space-y-8 text-nucleo-white/70 leading-relaxed">
-      <p class="font-editorial italic text-xl text-nucleo-white/80">
+    <div class="space-y-8 text-ixporte-white/70 leading-relaxed">
+      <p class="font-editorial italic text-xl text-ixporte-white/80">
         Jornalismo esportivo feito na universidade, para quem ama esporte e boa reportagem.
       </p>
 
       <section>
-        <h2 class="font-headline font-bold text-xl text-nucleo-gold uppercase tracking-wide mb-4">
+        <h2 class="font-headline font-bold text-xl text-ixporte-red uppercase tracking-wide mb-4">
           O projeto
         </h2>
         <p>
-          O Núcleo é um portal de jornalismo esportivo desenvolvido por estudantes do curso de Jornalismo da Universidade Federal de Santa Catarina (UFSC). Nasceu da necessidade de um espaço editorial onde os acadêmicos pudessem praticar cobertura esportiva com rigor jornalístico e identidade visual própria.
+          O ixporte é um portal de jornalismo esportivo desenvolvido por estudantes do curso de Jornalismo da Universidade Federal de Santa Catarina (UFSC). Nasceu da necessidade de um espaço editorial onde os acadêmicos pudessem praticar cobertura esportiva com rigor jornalístico e identidade visual própria.
         </p>
         <p class="mt-4">
           Produzimos reportagens, análises táticas, perfis de atletas e coberturas especiais — com foco no esporte catarinense, universitário e nos grandes eventos internacionais como a Copa do Mundo 2026 e a Copa Feminina 2027.
@@ -40,7 +40,7 @@ const equipe = [
       </section>
 
       <section>
-        <h2 class="font-headline font-bold text-xl text-nucleo-gold uppercase tracking-wide mb-4">
+        <h2 class="font-headline font-bold text-xl text-ixporte-red uppercase tracking-wide mb-4">
           Missão editorial
         </h2>
         <p>
@@ -49,17 +49,17 @@ const equipe = [
       </section>
 
       <section>
-        <h2 class="font-headline font-bold text-xl text-nucleo-gold uppercase tracking-wide mb-6">
+        <h2 class="font-headline font-bold text-xl text-ixporte-red uppercase tracking-wide mb-6">
           Equipe
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {
             equipe.map((membro) => (
-              <div class="border border-white/5 p-4 hover:border-nucleo-gold/30 transition-colors duration-200">
-                <h3 class="font-headline font-bold text-nucleo-white uppercase tracking-wide">
+              <div class="border border-white/5 p-4 hover:border-ixporte-red/30 transition-colors duration-200">
+                <h3 class="font-headline font-bold text-ixporte-white uppercase tracking-wide">
                   {membro.nome}
                 </h3>
-                <p class="mt-1 text-sm text-nucleo-white/50">{membro.cargo}</p>
+                <p class="mt-1 text-sm text-ixporte-white/50">{membro.cargo}</p>
               </div>
             ))
           }
@@ -67,8 +67,8 @@ const equipe = [
       </section>
 
       <section class="border-t border-white/10 pt-8">
-        <p class="text-sm text-nucleo-white/40">
-          O Núcleo é um projeto acadêmico vinculado ao curso de Jornalismo da UFSC e mantém parceria editorial com a <a href="/radio-ufsc" class="text-nucleo-gold hover:underline">Rádio UFSC</a>.
+        <p class="text-sm text-ixporte-white/40">
+          O ixporte é um projeto acadêmico vinculado ao curso de Jornalismo da UFSC e mantém parceria editorial com a <a href="/radio-ufsc" class="text-ixporte-red hover:underline">Rádio UFSC</a>.
         </p>
       </section>
     </div>

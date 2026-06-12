@@ -1,16 +1,16 @@
----
+﻿---
 import { navLinks } from '@/data/site';
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-nucleo-black/95 backdrop-blur-sm border-b border-nucleo-gold/20">
+<header class="fixed top-0 left-0 right-0 z-50 bg-ixporte-black/95 backdrop-blur-sm border-b border-ixporte-red/20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-[68px]">
 
       <a href="/" class="transition-opacity duration-200 hover:opacity-80">
         <img
-          src="/logo-nucleo.png"
-          alt="Núcleo - Jornalismo Esportivo UFSC"
+          src="/logo-nucleo.svg"
+          alt="ixporte - Jornalismo Esportivo UFSC"
           class="h-10 w-auto"
         />
       </a>
@@ -24,8 +24,8 @@ const currentPath = Astro.url.pathname;
               class:list={[
                 'text-sm uppercase tracking-wider transition-colors duration-200',
                 currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href))
-                  ? 'text-nucleo-gold'
-                  : 'text-nucleo-white/70 hover:text-nucleo-gold',
+                  ? 'text-ixporte-red'
+                  : 'text-ixporte-white/70 hover:text-ixporte-red',
               ]}
             >
               {link.label}
@@ -43,9 +43,9 @@ const currentPath = Astro.url.pathname;
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <span class="block w-6 h-0.5 bg-nucleo-gold transition-all duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
-        <span class="block w-6 h-0.5 bg-nucleo-gold transition-all duration-300 group-[.open]:opacity-0"></span>
-        <span class="block w-6 h-0.5 bg-nucleo-gold transition-all duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
+        <span class="block w-6 h-0.5 bg-ixporte-red transition-all duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
+        <span class="block w-6 h-0.5 bg-ixporte-red transition-all duration-300 group-[.open]:opacity-0"></span>
+        <span class="block w-6 h-0.5 bg-ixporte-red transition-all duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
       </button>
     </div>
   </div>
@@ -53,7 +53,7 @@ const currentPath = Astro.url.pathname;
   <!-- Mobile Menu -->
   <nav
     id="mobile-menu"
-    class="lg:hidden hidden border-t border-nucleo-gold/20 bg-nucleo-black"
+    class="lg:hidden hidden border-t border-ixporte-red/20 bg-ixporte-black"
     aria-label="Menu mobile"
   >
     <div class="px-4 py-4 flex flex-col gap-1">
@@ -64,8 +64,8 @@ const currentPath = Astro.url.pathname;
             class:list={[
               'py-3 px-2 text-sm uppercase tracking-wider border-b border-white/5 transition-colors duration-200',
               currentPath === link.href
-                ? 'text-nucleo-gold'
-                : 'text-nucleo-white/70 hover:text-nucleo-gold',
+                ? 'text-ixporte-red'
+                : 'text-ixporte-white/70 hover:text-ixporte-red',
             ]}
           >
             {link.label}

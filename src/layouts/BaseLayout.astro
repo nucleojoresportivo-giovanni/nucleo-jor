@@ -11,11 +11,11 @@ interface Props {
 
 const {
   title,
-  description = 'Núcleo — Jornalismo Esportivo UFSC. Reportagens, análises e cobertura esportiva produzida por estudantes de jornalismo da Universidade Federal de Santa Catarina.',
+  description = 'ixporte — Jornalismo Esportivo. Reportagens, análises e cobertura esportiva produzida por estudantes de jornalismo da Universidade Federal de Santa Catarina.',
   ogImage = '/images/og-default.png',
 } = Astro.props;
 
-const fullTitle = title === 'Home' ? 'Núcleo — Jornalismo Esportivo UFSC' : `${title} | Núcleo UFSC`;
+const fullTitle = title === 'Home' ? 'ixporte — Jornalismo Esportivo' : `${title} | ixporte`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -44,7 +44,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
   
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
     <title>{fullTitle}</title>
   </head>

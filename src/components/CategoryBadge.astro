@@ -1,4 +1,4 @@
----
+﻿---
 interface Props {
   category: string;
 }
@@ -6,13 +6,13 @@ interface Props {
 const { category } = Astro.props;
 
 const colorMap: Record<string, string> = {
-  'Copa Feminina 2027': 'bg-nucleo-gold text-nucleo-black',
-  Futebol: 'bg-emerald-700/90 text-white',
-  Esportes: 'bg-blue-700/90 text-white',
-  Especial: 'bg-purple-700/90 text-white',
+  'Copa Feminina 2027': 'bg-ixporte-red text-ixporte-black',
+  Futebol: 'bg-ixporte-crimson text-white',
+  Esportes: 'bg-ixporte-purple text-white',
+  Especial: 'bg-ixporte-purple-deep text-white',
 };
 
-const classes = colorMap[category] ?? 'bg-nucleo-gold/20 text-nucleo-gold';
+const classes = colorMap[category] ?? 'bg-ixporte-red/20 text-ixporte-red';
 ---
 
 <span class:list={['inline-block px-2.5 py-0.5 text-[10px] sm:text-xs font-medium uppercase tracking-wider', classes]}>

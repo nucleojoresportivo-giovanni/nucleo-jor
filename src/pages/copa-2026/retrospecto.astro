@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '@/layouts/BaseLayout.astro';
 
 const edicoes = [
@@ -36,31 +36,31 @@ const recordes = [
 ];
 ---
 
-<Layout title="Retrospecto Histórico — Copa do Mundo | Núcleo">
-  <main class="min-h-screen bg-nucleo-black pt-[68px]">
+<Layout title="Retrospecto Histórico — Copa do Mundo | ixporte">
+  <main class="min-h-screen bg-ixporte-black pt-[68px]">
 
     <!-- Hero -->
-    <section class="border-b border-nucleo-gold/20 py-16 px-4">
+    <section class="border-b border-ixporte-red/20 py-16 px-4">
       <div class="max-w-5xl mx-auto">
-        <p class="text-nucleo-gold text-xs tracking-[3px] uppercase mb-4">Copa do Mundo FIFA</p>
-        <h1 class="font-headline font-bold text-5xl md:text-7xl text-nucleo-white uppercase leading-none mb-4">
+        <p class="text-ixporte-red text-xs tracking-[3px] uppercase mb-4">Copa do Mundo FIFA</p>
+        <h1 class="font-headline font-bold text-5xl md:text-7xl text-ixporte-white uppercase leading-none mb-4">
           Retrospecto<br />Histórico
         </h1>
-        <p class="text-nucleo-white/50 text-base max-w-xl">
+        <p class="text-ixporte-white/50 text-base max-w-xl">
           Todas as edições desde 1930. A maior competição do planeta em números, campeões e artilheiros.
         </p>
       </div>
     </section>
 
     <!-- Recordes -->
-    <section class="border-b border-nucleo-gold/20 py-10 px-4">
+    <section class="border-b border-ixporte-red/20 py-10 px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 class="font-headline font-bold text-nucleo-gold text-xs tracking-[3px] uppercase mb-6">Recordes</h2>
+        <h2 class="font-headline font-bold text-ixporte-red text-xs tracking-[3px] uppercase mb-6">Recordes</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {recordes.map((r) => (
-            <div class="border border-nucleo-gold/30 bg-nucleo-gold/5 p-4">
-              <p class="text-nucleo-gold text-[10px] tracking-widest uppercase mb-1">{r.label}</p>
-              <p class="text-nucleo-white font-headline font-bold text-lg leading-tight">{r.valor}</p>
+            <div class="border border-ixporte-red/30 bg-ixporte-red/5 p-4">
+              <p class="text-ixporte-red text-[10px] tracking-widest uppercase mb-1">{r.label}</p>
+              <p class="text-ixporte-white font-headline font-bold text-lg leading-tight">{r.valor}</p>
             </div>
           ))}
         </div>
@@ -70,28 +70,28 @@ const recordes = [
     <!-- Tabela -->
     <section class="py-10 px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 class="font-headline font-bold text-nucleo-gold text-xs tracking-[3px] uppercase mb-6">Todas as Edições</h2>
+        <h2 class="font-headline font-bold text-ixporte-red text-xs tracking-[3px] uppercase mb-6">Todas as Edições</h2>
         <div class="overflow-x-auto">
           <table class="w-full text-sm text-left border-collapse">
             <thead>
-              <tr class="border-b border-nucleo-gold/40">
-                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Ano</th>
-                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Sede</th>
-                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Campeão</th>
-                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Vice</th>
-                <th class="py-3 pr-6 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Artilheiro</th>
-                <th class="py-3 text-nucleo-gold text-[10px] tracking-widest uppercase font-normal">Gols</th>
+              <tr class="border-b border-ixporte-red/40">
+                <th class="py-3 pr-6 text-ixporte-red text-[10px] tracking-widest uppercase font-normal">Ano</th>
+                <th class="py-3 pr-6 text-ixporte-red text-[10px] tracking-widest uppercase font-normal">Sede</th>
+                <th class="py-3 pr-6 text-ixporte-red text-[10px] tracking-widest uppercase font-normal">Campeão</th>
+                <th class="py-3 pr-6 text-ixporte-red text-[10px] tracking-widest uppercase font-normal">Vice</th>
+                <th class="py-3 pr-6 text-ixporte-red text-[10px] tracking-widest uppercase font-normal">Artilheiro</th>
+                <th class="py-3 text-ixporte-red text-[10px] tracking-widest uppercase font-normal">Gols</th>
               </tr>
             </thead>
             <tbody>
               {edicoes.map((e, i) => (
                 <tr class:list={['border-b border-white/5 transition-colors hover:bg-white/3', i % 2 === 0 ? '' : 'bg-white/[0.02]']}>
-                  <td class="py-3 pr-6 font-headline font-bold text-nucleo-gold text-base">{e.ano}</td>
-                  <td class="py-3 pr-6 text-nucleo-white/70">{e.sede}</td>
-                  <td class="py-3 pr-6 text-nucleo-white font-medium">{e.campeao}</td>
-                  <td class="py-3 pr-6 text-nucleo-white/60">{e.vice}</td>
-                  <td class="py-3 pr-6 text-nucleo-white/60 text-xs">{e.artilheiro}</td>
-                  <td class="py-3 text-nucleo-gold font-bold">{e.gols}</td>
+                  <td class="py-3 pr-6 font-headline font-bold text-ixporte-red text-base">{e.ano}</td>
+                  <td class="py-3 pr-6 text-ixporte-white/70">{e.sede}</td>
+                  <td class="py-3 pr-6 text-ixporte-white font-medium">{e.campeao}</td>
+                  <td class="py-3 pr-6 text-ixporte-white/60">{e.vice}</td>
+                  <td class="py-3 pr-6 text-ixporte-white/60 text-xs">{e.artilheiro}</td>
+                  <td class="py-3 text-ixporte-red font-bold">{e.gols}</td>
                 </tr>
               ))}
             </tbody>

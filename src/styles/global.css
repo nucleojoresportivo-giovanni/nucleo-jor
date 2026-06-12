@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -8,11 +8,11 @@
   }
 
   body {
-    @apply bg-nucleo-black text-nucleo-white font-body antialiased;
+    @apply bg-ixporte-black text-ixporte-white font-body antialiased;
   }
 
   ::selection {
-    @apply bg-nucleo-gold text-nucleo-black;
+    @apply bg-ixporte-red text-ixporte-black;
   }
 }
 

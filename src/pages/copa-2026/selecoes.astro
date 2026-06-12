@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '@/layouts/BaseLayout.astro';
 import { worldCupGroups } from '@/data/site';
 import { selecoes } from '@/data/selecoes';
@@ -6,17 +6,17 @@ import { selecoes } from '@/data/selecoes';
 const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
 ---
 
-<Layout title="Seleções Copa 2026 | Núcleo">
-  <main class="min-h-screen bg-nucleo-black pt-[68px]">
+<Layout title="Seleções Copa 2026 | ixporte">
+  <main class="min-h-screen bg-ixporte-black pt-[68px]">
 
     <!-- Hero -->
-    <section class="border-b border-nucleo-gold/20 py-16 px-4">
+    <section class="border-b border-ixporte-red/20 py-16 px-4">
       <div class="max-w-6xl mx-auto">
-        <p class="text-nucleo-gold text-xs tracking-[3px] uppercase mb-4">Copa do Mundo FIFA 2026</p>
-        <h1 class="font-headline font-bold text-5xl md:text-7xl text-nucleo-white uppercase leading-none mb-4">
+        <p class="text-ixporte-red text-xs tracking-[3px] uppercase mb-4">Copa do Mundo FIFA 2026</p>
+        <h1 class="font-headline font-bold text-5xl md:text-7xl text-ixporte-white uppercase leading-none mb-4">
           As 48<br />Seleções
         </h1>
-        <p class="text-nucleo-white/50 text-base max-w-xl">
+        <p class="text-ixporte-white/50 text-base max-w-xl">
           Clique em qualquer seleção para ver técnico, convocação, retrospecto nas eliminatórias e curiosidade.
         </p>
       </div>
@@ -27,13 +27,13 @@ const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
       <div class="max-w-6xl mx-auto space-y-12">
         {grupos.map((g) => (
           <div>
-            <h2 class="font-headline font-bold text-nucleo-gold text-xs tracking-[3px] uppercase mb-4 pb-2 border-b border-nucleo-gold/20">
+            <h2 class="font-headline font-bold text-ixporte-red text-xs tracking-[3px] uppercase mb-4 pb-2 border-b border-ixporte-red/20">
               Grupo {g}
             </h2>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {selecoes.filter(s => s.grupo === g).map((s) => (
                 <button
-                  class="group text-left bg-white/5 border border-white/10 hover:border-nucleo-gold/50 hover:bg-nucleo-gold/5 transition-all duration-200 p-4 cursor-pointer"
+                  class="group text-left bg-white/5 border border-white/10 hover:border-ixporte-red/50 hover:bg-ixporte-red/5 transition-all duration-200 p-4 cursor-pointer"
                   onclick={`openModal('${s.name}')`}
                 >
                   <div class="flex items-center gap-3 mb-2">
@@ -43,11 +43,11 @@ const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
                       class="w-10 h-10 object-contain"
                       onerror="this.style.opacity='0.2'"
                     />
-                    <span class="font-headline font-bold text-nucleo-white text-base leading-tight group-hover:text-nucleo-gold transition-colors">
+                    <span class="font-headline font-bold text-ixporte-white text-base leading-tight group-hover:text-ixporte-red transition-colors">
                       {s.name}
                     </span>
                   </div>
-                  <p class="text-nucleo-white/40 text-[10px] tracking-widest uppercase">{s.tecnico}</p>
+                  <p class="text-ixporte-white/40 text-[10px] tracking-widest uppercase">{s.tecnico}</p>
                 </button>
               ))}
             </div>
@@ -66,7 +66,7 @@ const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
   >
     <div
       id="modal-box"
-      class="relative w-full max-w-lg bg-[#111] border border-nucleo-gold/30 overflow-hidden max-h-[90vh] overflow-y-auto"
+      class="relative w-full max-w-lg bg-[#111] border border-ixporte-red/30 overflow-hidden max-h-[90vh] overflow-y-auto"
     >
       <!-- Foto background -->
       <div id="modal-hero" class="relative h-[200px] bg-[#1a1a1a] flex items-end">
@@ -76,15 +76,15 @@ const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
         <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent"></div>
         <!-- TODO: substituir por foto da seleção como background -->
         <div class="relative z-10 p-6">
-          <span id="modal-grupo-tag" class="text-nucleo-gold text-[10px] tracking-[3px] uppercase mb-1 block"></span>
-          <h3 id="modal-name" class="font-headline font-bold text-3xl text-nucleo-white uppercase"></h3>
+          <span id="modal-grupo-tag" class="text-ixporte-red text-[10px] tracking-[3px] uppercase mb-1 block"></span>
+          <h3 id="modal-name" class="font-headline font-bold text-3xl text-ixporte-white uppercase"></h3>
         </div>
       </div>
 
       <!-- Fechar -->
       <button
         onclick="closeModalDirect()"
-        class="absolute top-3 right-3 z-20 text-nucleo-gold hover:text-white transition-colors text-2xl leading-none w-8 h-8 flex items-center justify-center"
+        class="absolute top-3 right-3 z-20 text-ixporte-red hover:text-white transition-colors text-2xl leading-none w-8 h-8 flex items-center justify-center"
         aria-label="Fechar"
       >✕</button>
 
@@ -92,36 +92,36 @@ const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
       <div class="p-6 space-y-4">
         <div class="grid grid-cols-2 gap-3">
           <div class="bg-white/5 p-3">
-            <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Técnico</p>
-            <p id="modal-tecnico" class="text-nucleo-white text-sm font-medium"></p>
+            <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Técnico</p>
+            <p id="modal-tecnico" class="text-ixporte-white text-sm font-medium"></p>
           </div>
           <div class="bg-white/5 p-3">
-            <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">1ª Copa</p>
-            <p id="modal-primeira" class="text-nucleo-white text-sm font-medium"></p>
+            <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">1ª Copa</p>
+            <p id="modal-primeira" class="text-ixporte-white text-sm font-medium"></p>
           </div>
           <div class="bg-white/5 p-3">
-            <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Melhor resultado</p>
-            <p id="modal-melhor" class="text-nucleo-white text-sm font-medium"></p>
+            <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Melhor resultado</p>
+            <p id="modal-melhor" class="text-ixporte-white text-sm font-medium"></p>
           </div>
           <div class="bg-white/5 p-3">
-            <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Maior artilheiro</p>
-            <p id="modal-artilheiro" class="text-nucleo-white text-sm font-medium"></p>
+            <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Maior artilheiro</p>
+            <p id="modal-artilheiro" class="text-ixporte-white text-sm font-medium"></p>
           </div>
         </div>
 
         <div class="bg-white/5 p-3">
-          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Eliminatórias</p>
-          <p id="modal-elim" class="text-nucleo-white text-sm"></p>
+          <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Eliminatórias</p>
+          <p id="modal-elim" class="text-ixporte-white text-sm"></p>
         </div>
 
-        <div class="bg-nucleo-gold/10 border border-nucleo-gold/20 p-3">
-          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Curiosidade</p>
-          <p id="modal-curiosidade" class="text-nucleo-white/80 text-sm leading-relaxed"></p>
+        <div class="bg-ixporte-red/10 border border-ixporte-red/20 p-3">
+          <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Curiosidade</p>
+          <p id="modal-curiosidade" class="text-ixporte-white/80 text-sm leading-relaxed"></p>
         </div>
 
         <div id="modal-conv-wrap" class="bg-white/5 p-3">
-          <p class="text-nucleo-gold text-[9px] tracking-widest uppercase mb-1">Convocação</p>
-          <p id="modal-convocacao" class="text-nucleo-white/70 text-xs leading-relaxed"></p>
+          <p class="text-ixporte-red text-[9px] tracking-widest uppercase mb-1">Convocação</p>
+          <p id="modal-convocacao" class="text-ixporte-white/70 text-xs leading-relaxed"></p>
         </div>
       </div>
     </div>

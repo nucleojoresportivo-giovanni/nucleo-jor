@@ -3,9 +3,11 @@ import tailwind from '@astrojs/tailwind';
 import keystatic from '@keystatic/astro';
 import vercel from '@astrojs/vercel';
 
+import react from '@astrojs/react';
+
 export default defineConfig({
   site: 'https://nucleo-ufsc.vercel.app',
   output: 'server',
   adapter: vercel(),
-  integrations: [tailwind(), keystatic()],
+  integrations: [tailwind(), react(), keystatic()],
 });

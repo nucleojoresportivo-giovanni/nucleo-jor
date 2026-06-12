@@ -4,17 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        nucleo: {
-          black: '#0a0a0a',
-          gold: '#C9A227',
-          white: '#f5f5f0',
-          'gold-dark': '#a88620',
+        ixporte: {
+          black: '#000000',
+          white: '#FAF8F5',
+          red: '#FF0000',
+          crimson: '#D50048',
+          magenta: '#A90072',
+          purple: '#800080',
+          'purple-mid': '#560072',
+          'purple-deep': '#2A0048',
         },
       },
       fontFamily: {
-        headline: ['"Cabinet Grotesk"', 'sans-serif'],
-        body: ['"Cabinet Grotesk"', 'sans-serif'],
-        editorial: ['"Cabinet Grotesk"', 'sans-serif'],
+        headline: ['"Poppins"', 'sans-serif'],
+        body: ['"Open Sans"', 'sans-serif'],
+        editorial: ['"Poppins"', 'sans-serif'],
       },
       transitionDuration: {
         DEFAULT: '250ms',

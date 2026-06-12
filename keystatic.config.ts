@@ -1,10 +1,9 @@
 import { config, fields, collection } from '@keystatic/core';
 
 export default config({
-  storage: {
-    kind: 'github',
-    repo: 'nucleojoresportivo-giovanni/nucleo-jor',
-  },
+  storage: process.env.NODE_ENV === 'production'
+    ? { kind: 'github', repo: 'nucleojoresportivo-giovanni/nucleo-jor' }
+    : { kind: 'local' },
   collections: {
     reportagens: collection({
       label: 'Reportagens',
