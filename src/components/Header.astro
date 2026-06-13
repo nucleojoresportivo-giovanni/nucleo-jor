@@ -7,34 +7,13 @@ const currentPath = Astro.url.pathname;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-[68px]">
 
-      <!-- Logo: X 3D giratório + IXPORTE -->
-      <a href="/" class="flex items-center gap-2.5 group" aria-label="ixporte — início">
-        <div class="logo-3d-wrapper h-9 w-9 flex-shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 100 118"
-            class="logo-x-spin h-full w-full"
-            aria-hidden="true"
-          >
-            <defs>
-              <linearGradient id="xg-header" x1="0" y1="0" x2="0" y2="118" gradientUnits="userSpaceOnUse">
-                <stop offset="0%"   stop-color="#FF0000"/>
-                <stop offset="35%"  stop-color="#D50048"/>
-                <stop offset="70%"  stop-color="#800080"/>
-                <stop offset="100%" stop-color="#2A0048"/>
-              </linearGradient>
-            </defs>
-            <!-- Cabeça -->
-            <circle cx="50" cy="11" r="11" fill="url(#xg-header)"/>
-            <!-- Braços (parte superior do X) -->
-            <polygon points="0,27 42,27 50,39 58,27 100,27 50,62" fill="url(#xg-header)"/>
-            <!-- Pernas (parte inferior do X) -->
-            <polygon points="50,62 100,115 66,115 50,89 34,115 0,115" fill="url(#xg-header)"/>
-          </svg>
-        </div>
-        <span class="font-headline font-black text-[1.1rem] uppercase tracking-[0.18em] text-ixporte-white transition-colors duration-200 group-hover:text-gradient">
-          IXPORTE
-        </span>
+      <!-- Logo real com rotação 3D -->
+      <a href="/" class="logo-3d-wrapper transition-opacity duration-200 hover:opacity-80" aria-label="ixporte — início">
+        <img
+          src="/logo-v2.png"
+          alt="ixporte — Jornalismo Esportivo UFSC"
+          class="logo-x-spin h-10 w-auto object-contain"
+        />
       </a>
 
       <!-- Desktop Nav -->

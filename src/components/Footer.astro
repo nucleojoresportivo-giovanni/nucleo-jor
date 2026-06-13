@@ -7,28 +7,14 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Brand -->
       <div>
-        <a href="/" class="inline-flex items-center gap-2.5 group" aria-label="ixporte — início">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 100 118"
-            class="h-8 w-8 flex-shrink-0"
-            aria-hidden="true"
-          >
-            <defs>
-              <linearGradient id="xg-footer" x1="0" y1="0" x2="0" y2="118" gradientUnits="userSpaceOnUse">
-                <stop offset="0%"   stop-color="#FF0000"/>
-                <stop offset="35%"  stop-color="#D50048"/>
-                <stop offset="70%"  stop-color="#800080"/>
-                <stop offset="100%" stop-color="#2A0048"/>
-              </linearGradient>
-            </defs>
-            <circle cx="50" cy="11" r="11" fill="url(#xg-footer)"/>
-            <polygon points="0,27 42,27 50,39 58,27 100,27 50,62" fill="url(#xg-footer)"/>
-            <polygon points="50,62 100,115 66,115 50,89 34,115 0,115" fill="url(#xg-footer)"/>
-          </svg>
-          <span class="font-headline font-black text-base uppercase tracking-[0.18em] text-ixporte-white">
-            IXPORTE
-          </span>
+        <a href="/" class="inline-block" aria-label="ixporte — início">
+          <img
+            src="/logo-v2.png"
+            alt="ixporte — Jornalismo Esportivo"
+            class="h-8 w-auto object-contain"
+            width="160"
+            height="32"
+          />
         </a>
         <p class="mt-3 text-sm text-ixporte-white/50 leading-relaxed max-w-xs">
           Portal de jornalismo esportivo produzido por estudantes do curso de Jornalismo da UFSC.
