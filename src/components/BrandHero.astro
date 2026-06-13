@@ -1,0 +1,57 @@
+---
+// Seção de identidade visual com imagem gerada pelo Higgsfield AI
+---
+
+<section class="relative overflow-hidden h-[40vh] min-h-[280px] max-h-[400px]">
+  <!-- Imagem de fundo gerada pelo Higgsfield -->
+  <div class="absolute inset-0">
+    <img
+      src="/hero-bg-x.png"
+      alt=""
+      aria-hidden="true"
+      class="w-full h-full object-cover hero-img-animated opacity-90"
+    />
+  </div>
+
+  <!-- Overlay gradiente -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/80"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/60"></div>
+
+  <!-- Glow roxo/vermelho pulsante no centro -->
+  <div
+    class="brand-glow absolute inset-0 m-auto w-[400px] h-[200px] rounded-full pointer-events-none"
+    style="background: radial-gradient(ellipse, rgba(213,0,72,0.4) 0%, rgba(128,0,128,0.3) 50%, transparent 80%)"
+  ></div>
+
+  <!-- Conteúdo central -->
+  <div class="relative h-full flex flex-col items-center justify-center text-center px-4">
+    <!-- X decorativo pequeno acima -->
+    <div class="logo-3d-wrapper mb-3 h-10 w-10 opacity-90">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 118"
+        class="logo-x-spin h-full w-full"
+        aria-hidden="true"
+      >
+        <defs>
+          <linearGradient id="xg-brand" x1="0" y1="0" x2="0" y2="118" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#FF0000"/>
+            <stop offset="35%"  stop-color="#D50048"/>
+            <stop offset="70%"  stop-color="#800080"/>
+            <stop offset="100%" stop-color="#2A0048"/>
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="11" r="11" fill="url(#xg-brand)"/>
+        <polygon points="0,27 42,27 50,39 58,27 100,27 50,62" fill="url(#xg-brand)"/>
+        <polygon points="50,62 100,115 66,115 50,89 34,115 0,115" fill="url(#xg-brand)"/>
+      </svg>
+    </div>
+
+    <p class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl uppercase tracking-[0.2em] text-gradient drop-shadow-lg">
+      IXPORTE
+    </p>
+    <p class="mt-2 font-body text-ixporte-white/60 text-sm sm:text-base uppercase tracking-[0.3em]">
+      Jornalismo Esportivo · UFSC
+    </p>
+  </div>
+</section>

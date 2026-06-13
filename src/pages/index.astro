@@ -4,6 +4,7 @@ import HeroCard from '@/components/HeroCard.astro';
 import GroupsSlider from '@/components/GroupsSlider.astro';
 import ArticleCard from '@/components/ArticleCard.astro';
 import CopaBanner from '@/components/CopaBanner.astro';
+import BrandHero from '@/components/BrandHero.astro';
 import { getCollection } from 'astro:content';
 
 const allReportagens = await getCollection('reportagens');
@@ -30,6 +31,9 @@ const sm = gridArticles.slice(3, 6);
     href={`/reportagens/${featured.slug}`}
     date={featured.data.date}
   />
+
+  <!-- Brand Hero com imagem Higgsfield -->
+  <BrandHero />
 
   <!-- Groups Slider -->
   <GroupsSlider />
