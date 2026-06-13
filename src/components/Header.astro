@@ -1,18 +1,40 @@
-﻿---
+---
 import { navLinks } from '@/data/site';
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-ixporte-black/95 backdrop-blur-sm border-b border-ixporte-red/20">
+<header class="fixed top-0 left-0 right-0 z-50 bg-ixporte-black/95 backdrop-blur-sm">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-[68px]">
 
-      <a href="/" class="transition-opacity duration-200 hover:opacity-80">
-        <img
-          src="/logo-v2.png"
-          alt="ixporte - Jornalismo Esportivo UFSC"
-          class="h-10 w-auto"
-        />
+      <!-- Logo: X 3D giratório + IXPORTE -->
+      <a href="/" class="flex items-center gap-2.5 group" aria-label="ixporte — início">
+        <div class="logo-3d-wrapper h-9 w-9 flex-shrink-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 118"
+            class="logo-x-spin h-full w-full"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="xg-header" x1="0" y1="0" x2="0" y2="118" gradientUnits="userSpaceOnUse">
+                <stop offset="0%"   stop-color="#FF0000"/>
+                <stop offset="35%"  stop-color="#D50048"/>
+                <stop offset="70%"  stop-color="#800080"/>
+                <stop offset="100%" stop-color="#2A0048"/>
+              </linearGradient>
+            </defs>
+            <!-- Cabeça -->
+            <circle cx="50" cy="11" r="11" fill="url(#xg-header)"/>
+            <!-- Braços (parte superior do X) -->
+            <polygon points="0,27 42,27 50,39 58,27 100,27 50,62" fill="url(#xg-header)"/>
+            <!-- Pernas (parte inferior do X) -->
+            <polygon points="50,62 100,115 66,115 50,89 34,115 0,115" fill="url(#xg-header)"/>
+          </svg>
+        </div>
+        <span class="font-headline font-black text-[1.1rem] uppercase tracking-[0.18em] text-ixporte-white transition-colors duration-200 group-hover:text-gradient">
+          IXPORTE
+        </span>
       </a>
 
       <!-- Desktop Nav -->
@@ -22,10 +44,10 @@ const currentPath = Astro.url.pathname;
             <a
               href={link.href}
               class:list={[
-                'text-sm uppercase tracking-wider transition-colors duration-200',
+                'text-sm uppercase tracking-wider transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-px after:bg-gradient-to-r after:from-ixporte-red after:to-ixporte-purple after:transition-all after:duration-300 hover:after:w-full',
                 currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href))
                   ? 'text-ixporte-red'
-                  : 'text-ixporte-white/70 hover:text-ixporte-red',
+                  : 'text-ixporte-white/70 hover:text-ixporte-white',
               ]}
             >
               {link.label}
@@ -43,17 +65,20 @@ const currentPath = Astro.url.pathname;
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <span class="block w-6 h-0.5 bg-ixporte-red transition-all duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
-        <span class="block w-6 h-0.5 bg-ixporte-red transition-all duration-300 group-[.open]:opacity-0"></span>
-        <span class="block w-6 h-0.5 bg-ixporte-red transition-all duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
+        <span class="block w-6 h-0.5 bg-ixporte-crimson transition-all duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
+        <span class="block w-6 h-0.5 bg-ixporte-crimson transition-all duration-300 group-[.open]:opacity-0"></span>
+        <span class="block w-6 h-0.5 bg-ixporte-crimson transition-all duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
       </button>
     </div>
   </div>
 
+  <!-- Linha animada de gradiente no fundo do header -->
+  <div class="border-gradient-animated"></div>
+
   <!-- Mobile Menu -->
   <nav
     id="mobile-menu"
-    class="lg:hidden hidden border-t border-ixporte-red/20 bg-ixporte-black"
+    class="lg:hidden hidden bg-ixporte-black"
     aria-label="Menu mobile"
   >
     <div class="px-4 py-4 flex flex-col gap-1">

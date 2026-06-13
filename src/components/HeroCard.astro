@@ -1,4 +1,4 @@
-﻿---
+---
 import CategoryBadge from './CategoryBadge.astro';
 
 interface Props {
@@ -19,28 +19,43 @@ const formattedDate = date.toLocaleDateString('pt-BR', {
 });
 ---
 
-<article class="relative group h-[70vh] min-h-[480px] max-h-[720px] overflow-hidden">
+<article class="relative group h-[75vh] min-h-[520px] max-h-[780px] overflow-hidden">
   <a href={href} class="block h-full">
     <img
       src={coverImage}
       alt={title}
-      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
       loading="eager"
       fetchpriority="high"
     />
-    <div class="absolute inset-0 bg-gradient-to-t from-ixporte-black via-ixporte-black/60 to-transparent"></div>
 
-    <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 lg:p-12">
+    <!-- Overlay principal: preto + roxo profundo -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+    <!-- Toque de cor da identidade no rodapé -->
+    <div class="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#2A0048]/60 to-transparent"></div>
+
+    <!-- Linha decorativa superior com gradiente -->
+    <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-ixporte-crimson/50 to-transparent"></div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 lg:p-12 animate-fade-up">
       <CategoryBadge category={category} />
-      <h1 class="mt-4 font-headline font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-ixporte-white leading-tight tracking-normal max-w-4xl transition-colors duration-200 group-hover:text-ixporte-red">
+      <h1 class="mt-4 font-headline font-black text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-ixporte-white leading-tight tracking-tight max-w-4xl transition-colors duration-300 group-hover:text-gradient">
         {title}
       </h1>
-      <p class="mt-4 font-editorial italic text-ixporte-white/80 text-lg sm:text-xl max-w-2xl line-clamp-2">
+      <p class="mt-4 font-body text-ixporte-white/70 text-base sm:text-lg max-w-2xl line-clamp-2">
         {excerpt}
       </p>
-      <time datetime={date.toISOString()} class="mt-4 block text-sm text-ixporte-white/50">
-        {formattedDate}
-      </time>
+      <div class="mt-5 flex items-center gap-4">
+        <time datetime={date.toISOString()} class="text-sm text-ixporte-white/40 uppercase tracking-wider">
+          {formattedDate}
+        </time>
+        <span class="inline-flex items-center gap-1.5 text-sm text-ixporte-crimson uppercase tracking-wider font-medium group-hover:gap-2.5 transition-all duration-200">
+          Ler reportagem
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </span>
+      </div>
     </div>
   </a>
 </article>

@@ -1,4 +1,4 @@
-﻿---
+---
 interface Props {
   compact?: boolean;
 }
@@ -9,24 +9,35 @@ const { compact = false } = Astro.props;
 <section class:list={['relative overflow-hidden', compact ? 'my-8' : 'my-12 lg:my-16']}>
   <a
     href="/copa-feminina-2027"
-    class="group block relative bg-ixporte-red overflow-hidden card-hover"
+    class="group block relative overflow-hidden card-hover"
+    style="background: linear-gradient(135deg, #D50048 0%, #800080 50%, #2A0048 100%)"
   >
+    <!-- Padrão diagonal decorativo -->
     <div class="absolute inset-0 opacity-10">
-      <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,rgba(0,0,0,0.1)_10px,rgba(0,0,0,0.1)_20px)]"></div>
+      <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,rgba(255,255,255,0.05)_10px,rgba(255,255,255,0.05)_20px)]"></div>
+    </div>
+
+    <!-- X decorativo no fundo (marca d'água) -->
+    <div class="absolute right-8 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none hidden sm:block">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 118" class="h-32 w-32" aria-hidden="true">
+        <circle cx="50" cy="11" r="11" fill="white"/>
+        <polygon points="0,27 42,27 50,39 58,27 100,27 50,62" fill="white"/>
+        <polygon points="50,62 100,115 66,115 50,89 34,115 0,115" fill="white"/>
+      </svg>
     </div>
 
     <div class:list={['relative px-6 sm:px-10 lg:px-16', compact ? 'py-8' : 'py-12 lg:py-16']}>
       <div class="max-w-4xl">
-        <span class="inline-block text-ixporte-black/60 text-xs uppercase tracking-[0.2em] font-medium mb-3">
+        <span class="inline-block text-white/60 text-xs uppercase tracking-[0.2em] font-medium mb-3">
           Seção Especial
         </span>
-        <h2 class="font-headline font-bold text-ixporte-black text-2xl sm:text-3xl lg:text-4xl uppercase tracking-wide leading-tight group-hover:opacity-90 transition-opacity duration-200">
+        <h2 class="font-headline font-black text-white text-2xl sm:text-3xl lg:text-4xl uppercase tracking-wide leading-tight group-hover:opacity-90 transition-opacity duration-200">
           Copa do Mundo Feminina 2027
         </h2>
-        <p class="mt-3 font-editorial italic text-ixporte-black/70 text-base sm:text-lg max-w-2xl">
+        <p class="mt-3 font-body text-white/70 text-base sm:text-lg max-w-2xl">
           O Brasil sediará o maior evento esportivo feminino do planeta. Acompanhe a cobertura completa do ixporte.
         </p>
-        <span class="mt-5 inline-flex items-center gap-2 text-ixporte-black font-medium text-sm uppercase tracking-wider group-hover:gap-3 transition-all duration-200">
+        <span class="mt-5 inline-flex items-center gap-2 text-white font-medium text-sm uppercase tracking-wider group-hover:gap-3 transition-all duration-200">
           Ver cobertura
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
