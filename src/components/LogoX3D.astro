@@ -1,0 +1,74 @@
+---
+interface Props {
+  size?: string;        // ex: "h-9", "h-8", "h-10"
+  animate?: boolean;
+  id?: string;
+}
+const { size = 'h-9', animate = true, id = 'xg' } = Astro.props;
+const gradId  = `${id}-grad`;
+const gradIdB = `${id}-grad-back`;
+---
+
+<!--
+  X 3D: frente + verso com backface-visibility: hidden
+  rotateY(360deg) + rotateX(15deg) = parece objeto sólido girando, não folha plana
+-->
+<div class:list={['x-3d-scene', size, 'flex-shrink-0']} style="aspect-ratio: 200/240">
+  <div class:list={['x-3d-card', !animate && 'paused']}>
+
+    <!-- FRENTE: gradiente original -->
+    <svg class="x-face w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" aria-hidden="true">
+      <defs>
+        <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+          <stop offset="0%"   stop-color="#FF0000"/>
+          <stop offset="28%"  stop-color="#D50048"/>
+          <stop offset="62%"  stop-color="#800080"/>
+          <stop offset="100%" stop-color="#5a0060"/>
+        </linearGradient>
+      </defs>
+      <!-- Cabeça -->
+      <circle cx="100" cy="26" r="26" fill={`url(#${gradId})`}/>
+      <!-- Braços (parte superior) — notch no pescoço, canto externos -->
+      <path
+        d="M 4,58 L 68,58 Q 80,58 87,70 Q 94,82 100,84 Q 106,82 113,70 Q 120,58 132,58 L 196,58 L 117,134 L 83,134 Z"
+        fill={`url(#${gradId})`}
+      />
+      <!-- Pernas (parte inferior) — arch entre as pernas -->
+      <path
+        d="M 83,134 L 117,134 L 196,240 L 150,240 Q 136,240 128,227 Q 117,210 100,198 Q 83,210 72,227 Q 64,240 50,240 L 4,240 Z"
+        fill={`url(#${gradId})`}
+      />
+    </svg>
+
+    <!-- VERSO: gradiente escurecido (dá profundidade ao girar) -->
+    <svg class="x-face x-face-back w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" aria-hidden="true">
+      <defs>
+        <linearGradient id={gradIdB} x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+          <stop offset="0%"   stop-color="#AA0000"/>
+          <stop offset="30%"  stop-color="#8B0032"/>
+          <stop offset="65%"  stop-color="#4A0050"/>
+          <stop offset="100%" stop-color="#2A0038"/>
+        </linearGradient>
+      </defs>
+      <!-- espelhado em X para o verso -->
+      <g transform="scale(-1,1) translate(-200,0)">
+        <circle cx="100" cy="26" r="26" fill={`url(#${gradIdB})`}/>
+        <path
+          d="M 4,58 L 68,58 Q 80,58 87,70 Q 94,82 100,84 Q 106,82 113,70 Q 120,58 132,58 L 196,58 L 117,134 L 83,134 Z"
+          fill={`url(#${gradIdB})`}
+        />
+        <path
+          d="M 83,134 L 117,134 L 196,240 L 150,240 Q 136,240 128,227 Q 117,210 100,198 Q 83,210 72,227 Q 64,240 50,240 L 4,240 Z"
+          fill={`url(#${gradIdB})`}
+        />
+      </g>
+    </svg>
+
+  </div>
+</div>
+
+<style>
+  .paused {
+    animation-play-state: paused !important;
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
 import { navLinks } from '@/data/site';
+import LogoX3D from './LogoX3D.astro';
 const currentPath = Astro.url.pathname;
 ---
 
@@ -7,13 +8,12 @@ const currentPath = Astro.url.pathname;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-[68px]">
 
-      <!-- Logo real com rotação 3D -->
-      <a href="/" class="logo-3d-wrapper transition-opacity duration-200 hover:opacity-80" aria-label="ixporte — início">
-        <img
-          src="/logo-v2.png"
-          alt="ixporte — Jornalismo Esportivo UFSC"
-          class="logo-x-spin h-10 w-auto object-contain"
-        />
+      <!-- Logo: X 3D + IXPORTE branco -->
+      <a href="/" class="flex items-center gap-2.5 group select-none" aria-label="ixporte — início">
+        <LogoX3D size="h-9" id="header-x" />
+        <span class="font-headline font-black text-[1.05rem] uppercase tracking-[0.18em] text-ixporte-white transition-opacity duration-200 group-hover:opacity-70">
+          IXPORTE
+        </span>
       </a>
 
       <!-- Desktop Nav -->
@@ -51,7 +51,7 @@ const currentPath = Astro.url.pathname;
     </div>
   </div>
 
-  <!-- Linha animada de gradiente no fundo do header -->
+  <!-- Linha animada de gradiente -->
   <div class="border-gradient-animated"></div>
 
   <!-- Mobile Menu -->
@@ -83,7 +83,6 @@ const currentPath = Astro.url.pathname;
 <script>
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
-
   toggle?.addEventListener('click', () => {
     const isOpen = menu?.classList.toggle('hidden') === false;
     toggle.classList.toggle('open', isOpen);

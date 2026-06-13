@@ -1,5 +1,5 @@
 ---
-// Seção de identidade visual com imagem gerada pelo Higgsfield AI
+import LogoX3D from './LogoX3D.astro';
 ---
 
 <section class="relative overflow-hidden h-[40vh] min-h-[280px] max-h-[400px]">
@@ -25,14 +25,9 @@
 
   <!-- Conteúdo central -->
   <div class="relative h-full flex flex-col items-center justify-center text-center px-4">
-    <!-- Logo real girando -->
-    <div class="logo-3d-wrapper mb-3 h-10 w-10 opacity-90">
-      <img
-        src="/logo-v2.png"
-        alt=""
-        aria-hidden="true"
-        class="logo-x-spin h-full w-full object-contain"
-      />
+    <!-- X 3D girando -->
+    <div class="mb-3">
+      <LogoX3D size="h-12" id="brand-x" />
     </div>
 
     <p class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl uppercase tracking-[0.2em] text-gradient drop-shadow-lg">
