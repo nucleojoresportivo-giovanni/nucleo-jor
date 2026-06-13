@@ -1,19 +1,18 @@
 ---
 import { navLinks } from '@/data/site';
-import LogoX3D from './LogoX3D.astro';
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-ixporte-black/95 backdrop-blur-sm">
+<header class="fixed top-0 left-0 right-0 z-50 bg-ixporte-black/95 backdrop-blur-sm border-b border-ixporte-purple/20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-[68px]">
 
-      <!-- Logo: X 3D + IXPORTE branco -->
-      <a href="/" class="flex items-center gap-2.5 group select-none" aria-label="ixporte — início">
-        <LogoX3D size="h-9" id="header-x" />
-        <span class="font-headline font-black text-[1.05rem] uppercase tracking-[0.18em] text-ixporte-white transition-opacity duration-200 group-hover:opacity-70">
-          IXPORTE
-        </span>
+      <a href="/" class="transition-opacity duration-200 hover:opacity-80">
+        <img
+          src="/logo-v2.png"
+          alt="ixporte — Jornalismo Esportivo UFSC"
+          class="h-10 w-auto"
+        />
       </a>
 
       <!-- Desktop Nav -->
@@ -23,7 +22,7 @@ const currentPath = Astro.url.pathname;
             <a
               href={link.href}
               class:list={[
-                'text-sm uppercase tracking-wider transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-px after:bg-gradient-to-r after:from-ixporte-red after:to-ixporte-purple after:transition-all after:duration-300 hover:after:w-full',
+                'text-sm uppercase tracking-wider transition-colors duration-200',
                 currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href))
                   ? 'text-ixporte-red'
                   : 'text-ixporte-white/70 hover:text-ixporte-white',
@@ -51,13 +50,10 @@ const currentPath = Astro.url.pathname;
     </div>
   </div>
 
-  <!-- Linha animada de gradiente -->
-  <div class="border-gradient-animated"></div>
-
   <!-- Mobile Menu -->
   <nav
     id="mobile-menu"
-    class="lg:hidden hidden bg-ixporte-black"
+    class="lg:hidden hidden bg-ixporte-black border-t border-ixporte-purple/10"
     aria-label="Menu mobile"
   >
     <div class="px-4 py-4 flex flex-col gap-1">

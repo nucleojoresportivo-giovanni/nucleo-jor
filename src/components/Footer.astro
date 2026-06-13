@@ -1,5 +1,4 @@
 ---
-import LogoX3D from './LogoX3D.astro';
 const currentYear = new Date().getFullYear();
 ---
 
@@ -8,11 +7,14 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Brand -->
       <div>
-        <a href="/" class="inline-flex items-center gap-2.5 group" aria-label="ixporte — início">
-          <LogoX3D size="h-8" animate={false} id="footer-x" />
-          <span class="font-headline font-black text-sm uppercase tracking-[0.18em] text-ixporte-white">
-            IXPORTE
-          </span>
+        <a href="/" class="inline-block">
+          <img
+            src="/logo-v2.png"
+            alt="ixporte — Jornalismo Esportivo"
+            class="h-8 w-auto"
+            width="160"
+            height="32"
+          />
         </a>
         <p class="mt-3 text-sm text-ixporte-white/50 leading-relaxed max-w-xs">
           Portal de jornalismo esportivo produzido por estudantes do curso de Jornalismo da UFSC.
