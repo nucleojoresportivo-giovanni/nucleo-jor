@@ -282,8 +282,8 @@ const LOGO_BASE = '/logos/copa2026';
       return Math.round(track!.scrollLeft / slideWidth);
     }
 
-    prevBtn?.addEventListener('click', () => scrollToIndex(currentIndex - 1));
-    nextBtn?.addEventListener('click', () => scrollToIndex(currentIndex + 1));
+    prevBtn?.addEventListener('click', () => scrollToIndex((currentIndex - 1 + slides.length) % slides.length));
+    nextBtn?.addEventListener('click', () => scrollToIndex((currentIndex + 1) % slides.length));
 
     indicators.forEach((indicator) => {
       indicator.addEventListener('click', () => {

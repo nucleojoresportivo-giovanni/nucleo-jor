@@ -17,15 +17,6 @@ const { compact = false } = Astro.props;
       <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,rgba(255,255,255,0.05)_10px,rgba(255,255,255,0.05)_20px)]"></div>
     </div>
 
-    <!-- X decorativo no fundo (marca d'água) -->
-    <div class="absolute right-8 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none hidden sm:block">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 118" class="h-32 w-32" aria-hidden="true">
-        <circle cx="50" cy="11" r="11" fill="white"/>
-        <polygon points="0,27 42,27 50,39 58,27 100,27 50,62" fill="white"/>
-        <polygon points="50,62 100,115 66,115 50,89 34,115 0,115" fill="white"/>
-      </svg>
-    </div>
-
     <div class:list={['relative px-6 sm:px-10 lg:px-16', compact ? 'py-8' : 'py-12 lg:py-16']}>
       <div class="max-w-4xl">
         <span class="inline-block text-white/60 text-xs uppercase tracking-[0.2em] font-medium mb-3">
