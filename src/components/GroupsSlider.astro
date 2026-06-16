@@ -39,23 +39,23 @@ const LOGO_BASE = '/logos/copa2026';
               <p class="group-name font-headline text-ixporte-red/80 text-[14px] uppercase tracking-widest mb-3">
                 {group.label}
               </p>
-              <div class="flags-row flex items-end justify-center gap-[18px]">
+              <div class="flags-row flex items-end justify-center gap-1 sm:gap-[18px]">
                {group.teams.map((team) => (
   <div
-    class="flex flex-col items-center gap-2 min-w-[96px] sm:min-w-[112px] cursor-pointer group/flag"
+    class="flex flex-col items-center gap-1 sm:gap-2 min-w-[60px] sm:min-w-[112px] cursor-pointer group/flag"
     onclick={`openSliderModal('${team.name}')`}
   >
-    <div class="flag-circle flex h-[112px] w-[112px] items-center justify-center">
+    <div class="flag-circle flex h-[60px] w-[60px] sm:h-[112px] sm:w-[112px] items-center justify-center">
       <img
         src={`${LOGO_BASE}/${team.logo}`}
         alt={`Logo ${team.name}`}
-        class="h-[112px] w-[112px] object-contain transition-transform duration-200 group-hover/flag:scale-110"
+        class="h-[60px] w-[60px] sm:h-[112px] sm:w-[112px] object-contain transition-transform duration-200 group-hover/flag:scale-110"
         loading="lazy"
         width="112"
         height="112"
       />
     </div>
-    <span class="flag-name text-[11px] text-ixporte-white text-center leading-tight max-w-[80px]">
+    <span class="flag-name text-[9px] sm:text-[11px] text-ixporte-white text-center leading-tight max-w-[56px] sm:max-w-[80px]">
       {team.name}
     </span>
   </div>
@@ -226,11 +226,16 @@ const LOGO_BASE = '/logos/copa2026';
   }
 
   .flag-circle img {
-    width: 112px;
-    height: 112px;
     object-fit: contain;
     filter: drop-shadow(0 0 6px rgba(255,255,255,0.22));
     transition: filter 200ms ease;
+  }
+
+  @media (min-width: 640px) {
+    .flag-circle img {
+      width: 112px;
+      height: 112px;
+    }
   }
 
   .group\/flag:hover .flag-circle img {
