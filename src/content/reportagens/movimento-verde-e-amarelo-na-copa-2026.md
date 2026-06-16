@@ -3,7 +3,7 @@ title: >-
   Movimento Verde e Amarelo é a principal organização de apoio ao Brasil na Copa
   do Mundo de 2026
 date: 2026-06-16
-author: Heitor Augusto da Silva
+author: Heitor Augusto
 category: Copa 2026
 coverImageCaption: >-
   MVA vai para quarta Copa do Mundo Masculina. (Foto: Site oficial Movimento
