@@ -8,18 +8,10 @@ coverImageCaption: >-
   Cristiano Ronaldo e Lionel Messi, os dois maiores jogadores da história do
   futebol, reunidos pela última vez numa Copa do Mundo. Fonte: FIFA, Copa do
   Mundo 2026.
+excerpt: |
+  As estrelas principais que estão fazendo sua última Copa do Mundo
 featured: false
 ---
-**A ÚLTIMA DANÇA**
-
-*As estrelas principais que estão fazendo sua última Copa do Mundo*
-
-Copa do Mundo 2026 · EUA, Canadá e México
-
-**Introdução**
-
-&nbsp;
-
 Em 2026, o mundo do futebol viverá algo que transcende um simples torneio. Paralelamente às seleções que disputam o título, uma geração inteira de lendas subirá ao palco pela última vez. Messi. Ronaldo. Modrić. Neymar. Kanté. Son. Salah. Mané. De Bruyne. Nomes que dominaram o futebol mundial por duas décadas se encontram, todos ao mesmo tempo, no crepúsculo de suas carreiras internacionais.
 
 Não se trata de uma coincidência: é o fim de uma era. Uma era marcada por recordes inimagináveis, finais inesquecíveis, dramas pessoais e coletivos, e pela pergunta que nunca deixou de pairar sobre cada um deles: até quando? A Copa do Mundo de 2026, realizada nos Estados Unidos, no Canadá e no México, será para muitos desses jogadores a última oportunidade de brilhar sob as luzes mais intensas do esporte mundial. Alguns retornam como campeões, prontos para defender o que conquistaram. Outros retornam carregando o peso de um sonho ainda por realizar. Todos retornam sabendo que o relógio está correndo contra eles.
@@ -34,7 +26,7 @@ Este artigo conta a história de cada um deles: o que foram, o que construíram 
 
 &nbsp;
 
-**Quadro Geral: As Estrelas da Última Dança**
+**Quadro Geral: As estrelas da última dança**
 
 *Visão geral de cada jogador, seu país e a probabilidade de que 2026 seja realmente sua última Copa.*
 
@@ -589,5 +581,3 @@ Para além dos jogadores, há uma figura que também vive a sua última Copa do 
 Há algo de único no que a Copa do Mundo de 2026 representa. Não é apenas um torneio: é um ritual de despedida coletivo. Pela primeira vez na história, tantas lendas partilham o mesmo palco pela última vez, ao mesmo tempo. Messi e Ronaldo no mesmo Mundial pela última vez. Modrić aos 40 anos. Kanté de volta após anos de lesões. Neymar com uma última chance de entregar o que o Brasil sempre esperou.
 
 O futebol raramente sabe dizer adeus com elegância. Lewandowski não teve escolha. Griezmann preferiu não ter. Os outros terão. E é nesse privilégio, o de escolher como terminar, que reside a beleza e a crueldade desta última dança.
-
-***Que dancem bem.***
