@@ -1,9 +1,9 @@
 ---
-title: A NOVA COPA E SUAS 48 SELEÇÕES
+title: A nova Copa do Mundo e suas 48 seleções
 date: 2026-06-16
 author: Guilherme Kuhnen
 category: Copa 2026
-coverImage: /images/a-nova-copa-e-suas-48-selecoes/coverImage.jpg
+coverImage: /images/a-nova-copa-do-mundo-e-suas-48-selecoes/coverImage.jpg
 coverImageCaption: >-
   Gianni Infantino, presidente da Fifa, durante a coletiva de imprensa antes da
   cerimônia de abertura da Copa do Mundo 2026. (Foto: Instagram /
