@@ -1,5 +1,5 @@
 ---
-title: a-ultima-danca
+title: A última dança
 date: 2026-06-16
 author: Dani Adeoti
 category: Copa 2026
