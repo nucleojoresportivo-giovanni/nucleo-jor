@@ -19,7 +19,7 @@ export default config({
           label: 'Categoria',
           options: [
             { label: 'Copa Feminina 2027', value: 'Copa Feminina 2027' },
-            { label: 'Futebol', value: 'Futebol' },
+            { label: 'Copa 2026', value: 'Copa 2026' },
             { label: 'Esportes', value: 'Esportes' },
             { label: 'Especial', value: 'Especial' },
           ],
@@ -30,6 +30,7 @@ export default config({
           directory: 'public/images',
           publicPath: '/images',
         }),
+        coverImageCaption: fields.text({ label: 'Legenda da foto de capa', multiline: false }),
         excerpt: fields.text({ label: 'Resumo', multiline: true }),
         featured: fields.checkbox({ label: 'Destaque', defaultValue: false }),
         content: fields.markdoc({ label: 'Conteúdo', extension: 'md' }),

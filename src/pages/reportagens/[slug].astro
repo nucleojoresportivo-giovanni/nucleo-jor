@@ -44,12 +44,21 @@ const formattedDate = entry.data.date.toLocaleDateString('pt-BR', {
       </div>
     </header>
 
-    <img
-      src={entry.data.coverImage}
-      alt={entry.data.title}
-      class="w-full aspect-[16/9] object-cover mb-10"
-      loading="eager"
-    />
+    {entry.data.coverImage && (
+      <figure class="mb-10">
+        <img
+          src={entry.data.coverImage}
+          alt={entry.data.coverImageCaption ?? entry.data.title}
+          class="w-full aspect-[16/9] object-cover"
+          loading="eager"
+        />
+        {entry.data.coverImageCaption && (
+          <figcaption class="mt-2 text-xs text-ixporte-white/40 text-center italic">
+            {entry.data.coverImageCaption}
+          </figcaption>
+        )}
+      </figure>
+    )}
 
     <div class="prose prose-invert prose-lg max-w-none
       prose-headings:font-headline prose-headings:uppercase prose-headings:tracking-wide prose-headings:text-ixporte-white

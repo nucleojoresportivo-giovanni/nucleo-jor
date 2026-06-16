@@ -229,6 +229,12 @@ const LOGO_BASE = '/logos/copa2026';
     width: 112px;
     height: 112px;
     object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.22));
+    transition: filter 200ms ease;
+  }
+
+  .group\/flag:hover .flag-circle img {
+    filter: drop-shadow(0 0 12px rgba(255,255,255,0.45));
   }
 
   .groups-indicator.active {

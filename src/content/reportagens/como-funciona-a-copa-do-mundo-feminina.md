@@ -2,8 +2,9 @@
 title: 'Da fase de grupos à final: como funciona a Copa do Mundo Feminina '
 date: 2026-06-15
 author: Luiza Paz
-category: Futebol
+
 coverImage: /images/como-funciona-a-copa-do-mundo-feminina/coverImage.png
+category: Copa 2026
 excerpt: >-
   Competição reunirá 32 seleções e será disputada em fases eliminatórias até a
   grande final

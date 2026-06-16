@@ -40,7 +40,7 @@ const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
                     <img
                       src={`/logos/copa2026/${s.logo}`}
                       alt={s.name}
-                      class="w-10 h-10 object-contain"
+                      class="w-10 h-10 object-contain logo-glow"
                       onerror="this.style.opacity='0.2'"
                     />
                     <span class="font-headline font-bold text-ixporte-white text-base leading-tight group-hover:text-ixporte-red transition-colors">
@@ -127,6 +127,17 @@ const grupos = ['A','B','C','D','E','F','G','H','I','J','K','L'];
     </div>
   </div>
 </Layout>
+
+<style>
+  .logo-glow {
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.22));
+    transition: filter 200ms ease;
+  }
+
+  button:hover .logo-glow {
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.45));
+  }
+</style>
 
 <script define:vars={{ selecoes }}>
   function openModal(name) {

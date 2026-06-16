@@ -1,8 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 
 const categories = [
+  'Copa 2026',
   'Copa Feminina 2027',
-  'Futebol',
   'Esportes',
   'Especial',
 ] as const;
@@ -16,6 +16,7 @@ const reportagens = defineCollection({
     author: z.string(),
     category: z.enum(categories),
     coverImage: z.string().optional(),
+    coverImageCaption: z.string().optional(),
     excerpt: z.string().optional(),
     featured: z.boolean().default(false),
   }),

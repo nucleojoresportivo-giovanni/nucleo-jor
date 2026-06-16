@@ -2,7 +2,7 @@
 title: O que iremos assistir durante a Copa do Mundo
 date: 2026-06-15
 author: Gustavo Wendler
-category: Futebol
+category: Copa 2026
 coverImage: /images/o-que-iremos-assistir-durante-a-copa/coverImage.png
 excerpt: >-
   CazéTV, Globo e SBT disputam a audiência brasileira durante o maior evento

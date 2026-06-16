@@ -2,7 +2,7 @@
 title: Histórias para acompanhar durante a Copa do Mundo
 date: 2026-06-15
 author: Gustavo Wendler
-category: Futebol
+category: Copa 2026
 featured: false
 ---
 Se a CazéTV busca se aproximar de um modelo mais jornalístico sem abandonar a linguagem que a tornou popular, as crônicas de Fernanda Gentil podem ser uma das principais ferramentas para alcançar esse objetivo. Em participação nos programas de divulgação da cobertura, a jornalista confirmou que produzirá crônicas durante a Copa do Mundo, retomando um formato que já marcou sua participação em grandes eventos esportivos, especialmente nos Jogos Olímpicos.
