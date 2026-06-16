@@ -11,10 +11,11 @@ const reportagens = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    slug: z.string().optional(),
     date: z.coerce.date(),
     author: z.string(),
     category: z.enum(categories),
-    coverImage: z.string(),
+    coverImage: z.string().optional(),
     excerpt: z.string(),
     featured: z.boolean().default(false),
   }),
