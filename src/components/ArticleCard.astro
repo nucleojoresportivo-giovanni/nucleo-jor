@@ -3,9 +3,9 @@ import CategoryBadge from './CategoryBadge.astro';
 
 interface Props {
   title: string;
-  excerpt: string;
+  excerpt?: string;
   category: string;
-  coverImage: string;
+  coverImage?: string;
   href: string;
   date: Date;
   size?: 'lg' | 'md' | 'sm';
@@ -45,17 +45,22 @@ const config = sizeClasses[size];
 
 <article class:list={['group card-hover', config.wrapper]}>
   <a href={href} class="block h-full bg-ixporte-black border border-ixporte-purple/15 overflow-hidden transition-colors duration-300 hover:border-ixporte-crimson/40">
-    <div class:list={['relative overflow-hidden', config.image]}>
-      <img
-        src={coverImage}
-        alt={title}
-        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        loading="lazy"
-      />
-      <!-- Overlay com gradiente de identidade -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#2A0048]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-    </div>
+    {coverImage ? (
+      <div class:list={['relative overflow-hidden', config.image]}>
+        <img
+          src={coverImage}
+          alt={title}
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#2A0048]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+    ) : (
+      <div class:list={['relative overflow-hidden bg-ixporte-black/60 flex items-center justify-center', config.image]}>
+        <div class="absolute inset-0 bg-gradient-to-br from-ixporte-red/10 to-transparent"></div>
+      </div>
+    )}
     <div class="p-4 sm:p-5">
       <CategoryBadge category={category} />
       <h2 class:list={['mt-2 font-headline font-black tracking-tight text-ixporte-white leading-snug transition-colors duration-200 group-hover:text-gradient', config.title]}>
