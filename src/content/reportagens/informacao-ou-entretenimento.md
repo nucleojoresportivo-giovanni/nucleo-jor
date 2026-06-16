@@ -3,6 +3,7 @@ title: Informação ou entretenimento? Como as emissoras vão cobrir a Copa do M
 date: 2026-06-15
 author: Gustavo Wendler
 category: Futebol
+coverImage: /images/informacao-ou-entretenimento/coverImage.jpg
 excerpt: >-
   Com estratégias distintas, as emissoras apostam em novas linguagens e formatos
   para transformar a Copa de 2026.
