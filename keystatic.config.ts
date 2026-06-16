@@ -23,7 +23,7 @@ export default config({
             { label: 'Esportes', value: 'Esportes' },
             { label: 'Especial', value: 'Especial' },
           ],
-          defaultValue: 'Futebol',
+          defaultValue: 'Copa 2026',
         }),
         coverImage: fields.image({
           label: 'Imagem de capa',
