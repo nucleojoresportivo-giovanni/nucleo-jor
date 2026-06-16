@@ -11,25 +11,27 @@ const sorted = allReportagens.sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 
-const featured = sorted.find((r) => r.data.featured) ?? sorted[0];
-const rest = sorted.filter((r) => r.id !== featured.id);
+const featured = sorted.find((r) => r.data.featured) ?? sorted[0] ?? null;
+const rest = featured ? sorted.filter((r) => r.id !== featured.id) : [];
 
 const gridArticles = rest.slice(0, 5);
-const lg = gridArticles[0];
+const lg = gridArticles[0] ?? null;
 const md = gridArticles.slice(1, 3);
 const sm = gridArticles.slice(3, 6);
 ---
 
 <BaseLayout title="Home">
   <!-- Hero -->
-  <HeroCard
-    title={featured.data.title}
-    excerpt={featured.data.excerpt}
-    category={featured.data.category}
-    coverImage={featured.data.coverImage}
-    href={`/reportagens/${featured.slug}`}
-    date={featured.data.date}
-  />
+  {featured && (
+    <HeroCard
+      title={featured.data.title}
+      excerpt={featured.data.excerpt}
+      category={featured.data.category}
+      coverImage={featured.data.coverImage}
+      href={`/reportagens/${featured.slug}`}
+      date={featured.data.date}
+    />
+  )}
 
   <!-- Groups Slider -->
   <GroupsSlider />
