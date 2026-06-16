@@ -146,7 +146,7 @@ export const navLinks = [
   { href: '/copa-2026/retrospecto', label: 'Retrospecto' },
   { href: '/copa-feminina-2027', label: 'Copa Feminina 2027' },
   { href: '/especiais', label: 'Especiais' },
-  { href: '/radio-ufsc', label: 'Rádio UFSC' },
+  { href: '/radio-ufsc', label: 'Rádio Ponto UFSC' },
   { href: '/sobre', label: 'Sobre' },
   { href: '/contato', label: 'Contato' },
 ];

@@ -1,89 +1,99 @@
-﻿---
+---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 
 const programas = [
-  { titulo: 'Esporte Total', data: '28/05/2026', descricao: 'Análise da rodada do Campeonato Catarinense e convocação da Seleção.' },
-  { titulo: 'Arena UFSC', data: '26/05/2026', descricao: 'Transmissão ao vivo: Avaí 2 x 1 Figueirense.' },
-  { titulo: 'Resenha Esportiva', data: '23/05/2026', descricao: 'Entrevista com atletas paralímpicos formados na universidade.' },
-  { titulo: 'Esporte Total', data: '21/05/2026', descricao: 'Preparação da Seleção Brasileira Feminina para amistosos.' },
-  { titulo: 'Arena UFSC', data: '19/05/2026', descricao: 'Cobertura do Campeonato Universitário de Vôlei.' },
+  {
+    titulo: 'Grande Jornada Esportiva',
+    descricao: 'Transmissão, narração e apuração de jogos ao vivo.',
+    instagram: 'gje.ufsc',
+  },
+  {
+    titulo: 'Insira a Ficha',
+    descricao: 'Jornalismo esportivo voltado a e-sports.',
+    instagram: 'insiraaficha',
+  },
+  {
+    titulo: 'Bola na Trave',
+    descricao: 'Principais notícias dos campeonatos da semana.',
+    instagram: 'bolanatraveufsc',
+  },
+  {
+    titulo: 'Grid de Largada',
+    descricao: 'Podcast de notícias do mundo do automobilismo.',
+    instagram: 'griddelargadaufsc',
+  },
 ];
+
+const YOUTUBE_URL = 'https://www.youtube.com/channel/UCJR6tiEsw99lsmnl2M0Sz0w';
 ---
 
 <BaseLayout
-  title="Rádio UFSC"
-  description="Rádio UFSC — 50 anos de jornalismo universitário. Ouça ao vivo e conheça os programas esportivos."
+  title="Rádio Ponto UFSC"
+  description="Rádio Ponto UFSC — jornalismo universitário. Conheça os programas esportivos."
 >
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
     <header class="mb-12">
       <span class="text-ixporte-red text-xs uppercase tracking-[0.25em]">Parceiro</span>
       <h1 class="mt-4 font-headline font-bold text-4xl sm:text-5xl text-ixporte-white uppercase tracking-wide">
-        Rádio UFSC
+        Rádio Ponto UFSC
       </h1>
       <p class="mt-4 text-ixporte-white/60 text-lg leading-relaxed max-w-2xl">
-        Emissora universitária com mais de 50 anos de história. Referência em jornalismo, cultura e esporte em Santa Catarina.
+        Emissora universitária da UFSC. Referência em jornalismo, cultura e esporte em Santa Catarina.
       </p>
     </header>
 
-    <!-- Stream CTA -->
+    <!-- YouTube CTA -->
     <section class="border border-ixporte-red/30 p-6 sm:p-8 mb-12 card-hover">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
         <div>
           <h2 class="font-headline font-bold text-xl text-ixporte-red uppercase tracking-wide">
-            Ouça ao vivo
+            Assista no YouTube
           </h2>
           <p class="mt-2 text-sm text-ixporte-white/60">
-            Programação 24h com jornalismo, música e esporte.
+            Programas ao vivo e conteúdos esportivos no canal oficial.
           </p>
         </div>
         <a
-          href="https://radio.ufsc.br"
+          href={YOUTUBE_URL}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center gap-2 bg-ixporte-red text-ixporte-black px-6 py-3 font-medium text-sm uppercase tracking-wider hover:bg-ixporte-crimson transition-colors duration-200"
         >
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8 5v14l11-7z"/>
+            <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
           </svg>
-          Iniciar stream
+          Acessar canal
         </a>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="mb-12">
-      <h2 class="font-headline font-bold text-xl text-ixporte-white uppercase tracking-wide mb-4">
-        Sobre a emissora
-      </h2>
-      <div class="prose prose-invert max-w-none text-ixporte-white/70 leading-relaxed space-y-4">
-        <p>
-          Fundada em 1976, a Rádio UFSC é uma das emissoras universitárias mais antigas do Brasil em operação contínua. Localizada no campus Trindade, em Florianópolis, a rádio é mantida pela Universidade Federal de Santa Catarina.
-        </p>
-        <p>
-          A cobertura esportiva é um dos carros-chefe da programação, com transmissões ao vivo, programas de análise e entrevistas com atletas e técnicos. O ixporte mantém parceria editorial com a emissora para ampliar o alcance das reportagens esportivas produzidas na universidade.
-        </p>
-      </div>
-    </section>
-
-    <!-- Recent Programs -->
+    <!-- Programs -->
     <section>
       <h2 class="font-headline font-bold text-xl text-ixporte-white uppercase tracking-wide mb-6">
-        Últimos programas
+        Programas
       </h2>
       <ul class="space-y-4">
         {
           programas.map((prog) => (
             <li class="border border-white/5 p-4 sm:p-5 hover:border-ixporte-red/30 transition-colors duration-200">
-              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 <div>
                   <h3 class="font-headline font-bold text-ixporte-white uppercase tracking-wide">
                     {prog.titulo}
                   </h3>
                   <p class="mt-1 text-sm text-ixporte-white/60">{prog.descricao}</p>
                 </div>
-                <time class="text-xs text-ixporte-red uppercase tracking-wider whitespace-nowrap">
-                  {prog.data}
-                </time>
+                <a
+                  href={`https://www.instagram.com/${prog.instagram}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-1.5 text-xs text-ixporte-red hover:text-ixporte-white transition-colors duration-200 whitespace-nowrap"
+                >
+                  <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                  </svg>
+                  @{prog.instagram}
+                </a>
               </div>
             </li>
           ))
