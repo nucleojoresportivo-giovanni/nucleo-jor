@@ -4,12 +4,17 @@ date: 2026-06-15
 author: Gustavo Wendler
 category: Copa 2026
 coverImage: /images/o-que-iremos-assistir-durante-a-copa/coverImage.png
+coverImageCaption: >-
+  CazéTV, SBT e Rede Globo disputam o público brasileiro durante as transmissões
+  dos jogos da Seleção Brasileira (Imagem: Editada por Gustavo Wendler
 excerpt: >-
   CazéTV, Globo e SBT disputam a audiência brasileira durante o maior evento
   esportivo do mundo.
 featured: true
 ---
-Com estreia marcada para o dia 11 de junho, a Copa do Mundo de futebol masculino tem sido o grande alvo das emissoras brasileiras. A competição teve uma expansão desde sua última edição e para essa copa 48 seleções disputaram 104 jogos. Essa mudança não afetou apenas as estratégias de quem joga as partidas, mas também para quem transmite. Pela primeira vez em sua história a Copa do Mundo masculina terá seus jogos diluídos em múltiplas transmissões em diferentes plataformas no Brasil.&nbsp;
+Com estreia no dia 11 de junho, a Copa do Mundo de futebol masculino tem sido o grande alvo das emissoras brasileiras. A competição teve uma expansão desde sua última edição e para essa copa 48 seleções disputaram 104 jogos. Essa mudança não afetou apenas as estratégias de quem joga as partidas, mas também para quem transmite. Pela primeira vez em sua história a Copa do Mundo masculina terá seus jogos diluídos em múltiplas transmissões em diferentes plataformas no Brasil.
+
+&nbsp;
 
 Apesar da TV aberta e fechada sempre terem o protagonismo, quem roubou a cena dessa vez foi o digital. A emissora de streaming CazéTV passou por cima das tradicionais e garantiu a transmissão completa do torneio. O canal fundado pelo influenciador e streamer Casimiro Miguel, em parceria com a empresa LiveMode, será a única plataforma do país a transmitir os 104 jogos de forma gratuíta pelo Youtube. Além disso, a empresa adquiriu a exclusividade de 50 jogos que incluem clássicos europeus e duelos de favoritos ao título.&nbsp;
 
