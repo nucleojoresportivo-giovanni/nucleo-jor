@@ -3,7 +3,11 @@ title: Linha do Tempo de Marta Rumo à Copa do Mundo de 2027
 date: 2026-06-16
 author: Paula de Milano
 category: Copa Feminina 2027
-excerpt: "Retorno à Seleção e os Amistosos contra os EUA mostram que a Rainha continua sendo decisiva aos 40 anos"
+coverImage: /images/linha-do-tempo-de-marta-rumo-a-copa-2027/coverImage.jpg
+coverImageCaption: 'Créditos: Rafael Ribeiro/CBF'
+excerpt: >-
+  Retorno à Seleção e os Amistosos contra os EUA mostram que a Rainha continua
+  sendo decisiva aos 40 anos
 featured: false
 ---
 *Marta com prêmio de melhor jogadora da Copa América. Foto: AFP*
