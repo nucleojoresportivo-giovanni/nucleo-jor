@@ -4,6 +4,10 @@ date: 2026-06-15
 author: Gustavo Wendler
 category: Copa 2026
 coverImage: /images/informacao-ou-entretenimento/coverImage.jpg
+coverImageCaption: >-
+  CazéTV, fundado pelo influenciador Casimiro Miguel, além de transmitir todos
+  os jogos da Copa do Mundo, também passará as próximas temporadas da La Liga e
+  a Premier League (Imagem: CazéTV)
 excerpt: >-
   Com estratégias distintas, as emissoras apostam em novas linguagens e formatos
   para transformar a Copa de 2026.
@@ -11,30 +15,58 @@ featured: false
 ---
 A CazéTV, criada em 2022 para transmitir 22 jogos da Copa do Mundo, vem agora com o objetivo de se consolidar no mercado. Quando surgiu, a emissora do streamer Casimiro Miguel seguia uma linha editorial focada no entretenimento esportivo. Utilizando influenciadores e comediantes como repórteres e ex-jogadores como comentaristas, a CazéTV rapidamente se popularizou entre o público jovem, além de atrair as grandes massas pelo seu formato de exibição, já que ela era a única a transmitir todos os seus jogos, de graça, pela *internet*.&nbsp;
 
+‎
+
 Depois de 4 anos, o formato continua o mesmo, mas o direito de todos os jogos e a exclusividade de 52 partidas, fez com que a CazéTV tivesse uma estratégia diferente. Já tendo o apoio da geração Z, a emissora tem o propósito de atrair o público mais tradicional, acostumado com as coberturas jornalísticas da Globo. Com isso, a ideia é reduzir o tom informal e de entretenimento de suas transmissões e adotar comunicações mais informativas, especialmente em jogos de exclusividade.
+
+‎
 
 Em entrevista com o repórter da Folha de São Paulo, Gabriel Vaquer, o líder de conteúdo da CazéTV, Felipe Tebet, explica que "a programação pode responder em tempo real ao interesse do público, com novos formatos e transmissões surgindo ao longo do torneio". Fernando Nardini, ex-narrador da ESPN, e Fred Caldeira, ex-repórter da TNT Sports, são algumas das adições da emissora para reforçar esse jeito mais jornalístico.
 
+‎
+
 Além disso, a Cazé TV irá adotar um formato que vem sendo pouco utilizado pelas mídias esportivas atualmente, mas já foi muito forte no passado: os setoristas. Para acompanhar a seleção brasileira foram selecionados a apresentadora Fernanda Gentil , o comentarista Guilherme Beltrão e o influenciador digital Chico Moedas. Gentil será a âncora das coberturas da amarelinha enquanto Beltrão e Chico estarão fazendo reportagens mais próximas aos jogadores. Além da seleção brasileira, a emissora também terá conteúdos exclusivos das seleções da Argentina e de Portugal. Para a atual campeã, foram designados o repórter Rafael Morientes, ex-Prime Vídeo, e o ex-jogador Djalminha, enquanto Ricardo Quaresma fará os conteúdos para a seleção portuguesa.
+
+‎
 
 Em movimento contrário à CazéTV, a Rede Globo vem com a intenção de chamar o&nbsp; público jovem para seus conteúdos, adotando o entretenimento para suas abordagens. Mesmo sem a cobertura completa da competição, a emissora vem com a intenção de realizar uma megaoperação para gerar conteúdos em múltiplas plataformas para seus espectadores.
 
+‎
+
 Com a chegada da CazéTV a Globo se viu obrigada a seguir a tendência de ampliar suas linguagens e seus formatos para atender à nova geração. A criação do canal de streaming ge tv e a ampliação do uso das redes sociais são apenas parte das mudanças que a emissora tem fazendo para se adaptar ao novo estilo, e para essa copa a aposta é em personalidades conhecidas do público jovem.&nbsp;
+
+‎
 
 O anúncio de Fábio Porchat como apresentador do programa “Central da Copa”, ao lado de Tadeu Schmidt, mostra como o entretenimento e o humor serão investimentos pesados da Globo para essa Copa. A emissora pretende manter o seu formato tradicional durante os jogos e já tem confirmado os repórteres Carlos Gil, Débora Gares, Felipe Brisolla, Kiko Menezes e Pedro Bassan para trazer o tom informativo. Contudo, intervalos, pré e pós jogo devem ter uma linguagem diferente ao que os espectadores da Globo estão acostumados.
 
+‎
+
 Com Everaldo Marques nas transmissões da seleção brasileira, a Rede Globo também apostou em outras duas personalidades para conquistar a geração Z: Gustavo Villani e Caio Ribeiro. A dupla, muita conhecida por narrar e comentar as partidas do jogo eletrônico EA Sports FC (antes chamado de FIFA), vai realizar as transmissões, em loco, dos jogos da fase de grupos para a TV aberta. Villani irá dividir essas transmissões com a narradora Renata Silveira, após a notícia que Luís Roberto será afastado das transmissões por conta de problemas de saúde.&nbsp;
+
+‎
 
 Já o SBT vem com a campanha de "A Copa que o Brasil quer ver".&nbsp; Destacando personalidades como Galvão Bueno e Tiago Leifert, o objetivo da emissora é atrair telespectadores na nostalgia e no nome desses personagens, mais do que em seu formato de funcionamento. O SBT, junto ao N Sports, é o canal que transmitirá menos jogos e sofre grande competição da Globo e CazéTV, que possuem públicos mais estabelecidos da mídia esportiva.
 
+‎
+
 A partir disso, a tática do canal será apostar na memória afetiva dos telespectadores. Além do nome mais conhecido do jornalismo brasileiro, Galvão Bueno, o resgate do mascote Amarelinho. Criado em 1990, o personagem foi a cara de grandes coberturas da emissora como as Copas de 1994 e 1998 (sendo essa a última copa que o SBT fez).
+
+‎
 
 A head de marketing do SBT, Priscila Stoliar, em entrevista à Redação Máquina do Esporte, explica que: “Esse é um dos maiores investimentos do SBT nos últimos anos e marca um momento estratégico para a emissora. A campanha amplia a presença da marca em diferentes plataformas e reforça nossa estratégia de conectar o público à transmissão com grandes nomes e uma comunicação consistente”. A estratégia é utilizar o palco da Copa, para ingressar o canal aberto no jornalismo esportivo novamente.
 
+‎
+
 Além disso, a linha editorial aposta em coberturas que misturam o jornalismo esportivo tradicional e o entretenimento - prática que está sendo abordada por todas as emissoras. A parceria com a N Sports, indica um foco em entretenimento, trazendo resenhas, formatos mais informais e bastidores da Copa do Mundo. A N Sports, que tem Galvão como um dos sócios, tem o objetivo de oferecer conteúdo esportivo multiplataforma, diversificando as narrativas para incluir multi modalidades esportivas&nbsp; e multigerações.
+
+‎
 
 Apesar de partirem de posições diferentes no mercado, as três transmissoras chegam à Copa do Mundo com estratégias que demonstram uma aproximação entre formatos tradicionalmente separados. A CazéTV, que se consolidou por meio de uma linguagem informal e focada no entretenimento, busca reforçar sua credibilidade com a contratação de jornalistas experientes, cobertura exclusiva de seleções e uma estrutura de programação mais próxima dos grandes grupos de mídia. Em contrapartida, a Globo vem incorporando elementos característicos do ambiente digital, apostando em personalidades do entretenimento, formatos mais descontraídos e conteúdos voltados às redes sociais. Já o SBT procura equilibrar essas duas tendências, combinando nomes históricos do jornalismo esportivo com uma proposta multiplataforma desenvolvida em parceria com a N Sports.
 
+‎
+
 As diferenças entre as emissoras aparecem principalmente na forma como cada uma pretende conquistar o público. A CazéTV aposta na abrangência de sua cobertura e na força da transmissão gratuita pela internet para consolidar sua posição como principal plataforma esportiva digital do país. A Globo utiliza sua tradição e sua capacidade de mobilização nacional para transformar a Copa em um evento presente em diferentes programas e horários da grade. O SBT, por sua vez, busca se diferenciar através da memória afetiva, resgatando personagens e profissionais ligados a momentos marcantes da história das transmissões esportivas brasileiras. Dessa forma, cada emissora procura oferecer ao espectador um motivo diferente para acompanhar seus conteúdos.
+
+‎
 
 A Copa de 2026 também marca um momento de transformação para o mercado de mídia esportiva brasileiro. Pela primeira vez, a disputa pelos direitos de transmissão resulta em uma fragmentação significativa da audiência, permitindo que o público escolha não apenas quais jogos assistir, mas também qual narrativa deseja acompanhar. Nesse cenário, a competição acontece tanto dentro quanto fora dos gramados. Enquanto a CazéTV tenta provar que pode competir editorialmente com os veículos tradicionais, a Globo busca reafirmar sua relevância em um ambiente cada vez mais digitalizado e o SBT vê no torneio uma oportunidade de reconstruir sua presença no jornalismo esportivo. Mais do que transmitir partidas, as três emissoras utilizam a Copa como uma vitrine para seus projetos futuros.
