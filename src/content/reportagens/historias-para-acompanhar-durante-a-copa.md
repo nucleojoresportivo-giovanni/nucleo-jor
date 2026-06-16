@@ -7,6 +7,9 @@ coverImage: /images/historias-para-acompanhar-durante-a-copa/coverImage.avif
 coverImageCaption: >-
   Galvão Bueno é o mais novo sócio da N Sports e  a cara das transmissões da
   copa do Mundo da emissora junto com a SBT (Imagem: N Sports)
+excerpt: >-
+  Fernanda Gentil, Everaldo Marques e Galvão Bueno protagonizam narrativas que
+  prometem marcar a cobertura da Copa de 2026 dentro e fora de campo.
 featured: false
 ---
 Se a CazéTV busca se aproximar de um modelo mais jornalístico sem abandonar a linguagem que a tornou popular, as crônicas de Fernanda Gentil podem ser uma das principais ferramentas para alcançar esse objetivo. Em participação nos programas de divulgação da cobertura, a jornalista confirmou que produzirá crônicas durante a Copa do Mundo, retomando um formato que já marcou sua participação em grandes eventos esportivos, especialmente nos Jogos Olímpicos.
