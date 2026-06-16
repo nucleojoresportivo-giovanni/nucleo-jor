@@ -1,13 +1,19 @@
 ---
-title: Crise geopolítica engole o futebol e transforma a participação do Irã na Copa de 2026
+title: >-
+  Crise geopolítica engole o futebol e transforma a participação do Irã na Copa
+  de 2026
 date: 2026-06-15
 author: Bela Nowalls
 category: Copa 2026
-excerpt: "Sem visto para dirigentes e proibidos de dormir nos EUA, iranianos enfrentam rotina exaustiva em um torneio que virou o espelho de um mundo em guerra."
+coverImage: /images/crise-geopolitica-engole-o-futebol-ira-copa-2026/coverImage.jpeg
+coverImageCaption: >-
+  (Equipe do Irã no jogo contra a Nova Zelândia, 15 de junho de 2026. Foto do
+  Instagram Oficial da Federação do Irã FFIRI)
+excerpt: >-
+  Sem visto para dirigentes e proibidos de dormir nos EUA, iranianos enfrentam
+  rotina exaustiva em um torneio que virou o espelho de um mundo em guerra.
 featured: false
 ---
-*(Equipe do Irã no pré-jogo de um amistoso em março de 2026. Foto por: Oner San/AFP)*
-
 O futebol, historicamente, se orgulha de ser uma "tabula rasa". Uma tela em branco onde povos projetam seus valores e, por noventa minutos, esquecem as fronteiras. Mas na Copa do Mundo de 2026, as linhas do gramado foram engolidas pela dura realidade da geopolítica internacional. Sob a influência de um conflito armado real no Oriente Médio iniciado no início deste ano, a seleção do Irã vive uma situação difícil no esporte moderno para conseguir jogar o torneio.
 
 ## Entendendo o Esporte como Espelho do Mundo
@@ -36,11 +42,23 @@ Para aumentar a complexidade interna, o desembarque do time na megalópole de Lo
 
 Sorteado no Grupo G, o Irã fará toda a sua primeira fase em solo americano, aumentando o drama de sua rotina de viagens diárias a partir de Tijuana. Confira o calendário da seleção:
 
-| Data | Adversário | Cidade |
-| --- | --- | --- |
-| 15 de junho | Nova Zelândia | Los Angeles |
-| 21 de junho | Bélgica | Los Angeles |
-| 26 de junho | Egito | Seattle |
+{% table %}
+- Data
+- Adversário
+- Cidade
+---
+- 15 de junho
+- Nova Zelândia
+- Los Angeles
+---
+- 21 de junho
+- Bélgica
+- Los Angeles
+---
+- 26 de junho
+- Egito
+- Seattle
+{% /table %}
 
 ## O Fantasma de 1998 e a Chance de um Choque Direto
 
