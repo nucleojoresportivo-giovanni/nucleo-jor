@@ -8,7 +8,7 @@ category: Copa 2026
 coverImage: /images/crise-geopolitica-engole-o-futebol-ira-copa-2026/coverImage.jpeg
 coverImageCaption: >-
   (Jogadores do Irã comemoram gol contra Nova Zelândia em empate no dia 15 de
-  junho de 2026. Foto do Instagram Oficial da Federação do Irã FFIRI)
+  junho de 2026. Crédito da imagem: Instagram Oficial da Federação do Irã FFIRI)
 excerpt: >-
   Sem visto para dirigentes e proibidos de dormir nos EUA, iranianos enfrentam
   rotina exaustiva em um torneio que virou o espelho de um mundo em guerra.
