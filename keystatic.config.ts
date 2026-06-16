@@ -32,7 +32,7 @@ export default config({
         }),
         excerpt: fields.text({ label: 'Resumo', multiline: true }),
         featured: fields.checkbox({ label: 'Destaque', defaultValue: false }),
-        content: fields.markdownEditor({ label: 'Conteúdo' }),
+        content: fields.markdoc({ label: 'Conteúdo' }),
       },
     }),
   },
