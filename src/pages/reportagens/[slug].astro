@@ -3,6 +3,8 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import CategoryBadge from '@/components/CategoryBadge.astro';
 import { getCollection } from 'astro:content';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const reportagens = await getCollection('reportagens');
   return reportagens.map((entry) => ({
