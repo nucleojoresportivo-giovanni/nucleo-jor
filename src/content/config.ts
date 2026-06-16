@@ -16,7 +16,7 @@ const reportagens = defineCollection({
     author: z.string(),
     category: z.enum(categories),
     coverImage: z.string().optional(),
-    excerpt: z.string(),
+    excerpt: z.string().optional(),
     featured: z.boolean().default(false),
   }),
 });
