@@ -1,13 +1,14 @@
 ---
-title: "Copa Feminina 2027: Brasil aposta em nova geração"
+title: 'Copa Feminina 2027: Brasil aposta em nova geração'
 date: 2026-05-25
-author: "Lucas Mendes"
-category: "Copa Feminina 2027"
-coverImage: "/images/copa-feminina-2027.png"
-excerpt: "Com sede no Brasil, a Copa do Mundo Feminina de 2027 promete ser o maior evento esportivo feminino da história do país."
+author: Lucas Mendes
+category: Copa Feminina 2027
+coverImage: /images/copa-feminina-2027-brasil/coverImage.png
+excerpt: >-
+  Com sede no Brasil, a Copa do Mundo Feminina de 2027 promete ser o maior
+  evento esportivo feminino da história do país.
 featured: true
 ---
-
 A Copa do Mundo Feminina de 2027 será histórica para o futebol brasileiro. Pela primeira vez, o Brasil sediará o torneio — e as expectativas são enormes.
 
 A Confederação Brasileira de Futebol já iniciou conversas com cidades-sede e planeja investimentos recordes em infraestrutura e divulgação do futebol feminino.
