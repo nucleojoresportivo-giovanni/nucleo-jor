@@ -10,8 +10,6 @@ excerpt: >-
   sendo decisiva aos 40 anos
 featured: false
 ---
-*Marta com prêmio de melhor jogadora da Copa América. Foto: AFP*
-
 O ano de 2025 foi mais um capítulo marcante na história do futebol feminino. Na final da Copa América, realizada no Equador, a Seleção Brasileira perdia para a Colômbia quando Marta saiu do banco de reservas no segundo tempo. Aos 39 anos, a camisa 10 marcou dois gols salvadores, forçou a prorrogação no empate em 4 a 4 e garantiu o título nacional na disputa por pênaltis. Consagrada como a melhor jogadora do torneio mesmo sem ser titular absoluta, a craque deixou claro que sua coroa de Rainha permanece intacta. Desde aquela conquista, ela não havia mais sido convocada, criando um hiato que alimentou a principal dúvida na mente do torcedor brasileiro: Marta chegará à Copa do Mundo de 2027?
 
 O mistério começou a ser respondido neste mês de junho, quando o técnico Arthur Elias promoveu o retorno da atleta para os amistosos contra os Estados Unidos. O reencontro com a torcida exigiu cautela física. No primeiro jogo, realizado no dia seis, Marta permaneceu no banco de reservas sabendo que não entraria em campo, já que cumpria um cronograma de recuperação de um edema na coxa esquerda. A volta aos gramados ocorreu de fato no dia nove, quando a Rainha entrou na reta final do confronto substituindo Tainá Maranhão.
