@@ -16,7 +16,9 @@ Com estreia no dia 11 de junho, a Copa do Mundo de futebol masculino tem sido o 
 
 &nbsp;
 
-Apesar da TV aberta e fechada sempre terem o protagonismo, quem roubou a cena dessa vez foi o digital. A emissora de streaming CazéTV passou por cima das tradicionais e garantiu a transmissão completa do torneio. O canal fundado pelo influenciador e streamer Casimiro Miguel, em parceria com a empresa LiveMode, será a única plataforma do país a transmitir os 104 jogos de forma gratuíta pelo Youtube. Além disso, a empresa adquiriu a exclusividade de 50 jogos que incluem clássicos europeus e duelos de favoritos ao título.&nbsp;
+Apesar da TV aberta e fechada sempre terem o protagonismo, quem roubou a cena dessa vez foi o digital. A emissora de streaming CazéTV passou por cima das tradicionais e garantiu a transmissão completa do torneio. O canal fundado pelo influenciador e streamer Casimiro Miguel, em parceria com a empresa LiveMode, será a única plataforma do país a transmitir os 104 jogos de forma gratuíta pelo Youtube. Além disso, a empresa adquiriu a exclusividade de 50 jogos que incluem clássicos europeus e duelos de favoritos ao título.
+
+&nbsp;
 
 Além das partidas, a CazéTV já anunciou sua programação para a competição e conta com uma cobertura de 24 horas por dia. Serão apresentados quatro programas diários, que incluem os já consolidados “Geral CazéTV” e “Copazona”. Além disso, a emissora anunciou a estreia de dois programas: o “Aqui É Brasil” e o “Live da Madruga”. O primeiro foca na cobertura específica da seleção brasileira, enquanto o segundo, será apresentado de madrugada e reviverá os melhores momentos daquele dia.
 
