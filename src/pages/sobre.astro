@@ -1,13 +1,33 @@
-﻿---
+---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 
-const equipe = [
-  { nome: 'Marina Costa', cargo: 'Editora-chefe' },
-  { nome: 'Lucas Mendes', cargo: 'Editor de Futebol' },
-  { nome: 'Ana Paula Ribeiro', cargo: 'Repórter' },
-  { nome: 'Pedro Henrique', cargo: 'Analista' },
-  { nome: 'Camila Souza', cargo: 'Repórter' },
-  { nome: 'Rafael Oliveira', cargo: 'Editor de Especiais' },
+const coordenacao = [
+  { nome: 'Raphaela Xavier de Oliveira Ferro', cargo: 'Orientação' },
+  { nome: 'Giovanni Ribeiro Paiva', cargo: 'Edição e site' },
+  { nome: 'Ana Laura Conde', cargo: 'Artes e identidade visual' },
+];
+
+const reporteres = [
+  'Terezinha Lima de Quadros',
+  'Luiz Felipe de Moraes Sirydakis',
+  'Gustavo Willamil Laurindo Rodrigues',
+  'Victor Hugo Saggin Viegas',
+  'Arieli Cristovao de Souza',
+  'Andre Luis Gomes Farias',
+  'Edu Demarchi Gomes',
+  'Lucas Gorges Belarmino',
+  'Davi dos Santos Mariano',
+  'Gabriel Damazio Dias',
+  'Guilherme Kuhnen Farias',
+  'Conrado Favaro Leal',
+  'Maria Beatriz Moran da Costa',
+  'Heitor Augusto da Silva',
+  'Gustavo Wendler',
+  'Luisa Rodrigues Paz',
+  'Isabela Padilha Nouals',
+  'Paula de Milano Tumelero',
+  'Maria Célia Blanche Bonsvelet',
+  'Dani Souleymane Adeoti',
 ];
 ---
 
@@ -23,28 +43,22 @@ const equipe = [
     </header>
 
     <div class="space-y-8 text-ixporte-white/70 leading-relaxed">
-      <p class="font-editorial italic text-xl text-ixporte-white/80">
-        Jornalismo esportivo feito na universidade, para quem ama esporte e boa reportagem.
+      <p>
+        O ixporte é um portal de jornalismo esportivo feito por estudantes do curso de Jornalismo da Universidade Federal de Santa Catarina (UFSC). O nome vem da gíria "istepô", parte da gíria manezinha de Florianópolis. Uma escolha coletiva que marca de onde o portal nasce e quem o faz.
       </p>
-
-      <section>
-        <h2 class="font-headline font-bold text-xl text-ixporte-red uppercase tracking-wide mb-4">
-          O projeto
-        </h2>
-        <p>
-          O ixporte é um portal de jornalismo esportivo desenvolvido por estudantes do curso de Jornalismo da Universidade Federal de Santa Catarina (UFSC). Nasceu da necessidade de um espaço editorial onde os acadêmicos pudessem praticar cobertura esportiva com rigor jornalístico e identidade visual própria.
-        </p>
-        <p class="mt-4">
-          Produzimos reportagens, análises táticas, perfis de atletas e coberturas especiais — com foco no esporte catarinense, universitário e nos grandes eventos internacionais como a Copa do Mundo 2026 e a Copa Feminina 2027.
-        </p>
-      </section>
+      <p>
+        O jornalismo esportivo ocupa um espaço historicamente tensionado entre a lógica do espetáculo e os princípios editoriais que orientam qualquer cobertura séria: verificação, contextualização, pluralidade de fontes e compromisso com o interesse público (não o interesse do público).
+      </p>
+      <p>
+        Isso significa tratar o esporte com as mesmas ferramentas que qualquer cobertura jornalística séria exige: apuração, pluralidade de fontes e disposição para questionar. Além da visão de não olhar apenas para o resultado, mas sim pelo que temos por trás de cada ação.
+      </p>
 
       <section>
         <h2 class="font-headline font-bold text-xl text-ixporte-red uppercase tracking-wide mb-4">
           Missão editorial
         </h2>
         <p>
-          Informar com profundidade, contextualizar com dados e contar histórias que vão além do placar. Acreditamos que o jornalismo esportivo universitário tem potencial para formar profissionais críticos e preparar a próxima geração de repórteres, editores e produtores do esporte brasileiro.
+          Produzir jornalismo esportivo com rigor, ética e profundidade. Reconhecendo no esporte um tema de relevância pública e tratando sua cobertura com a seriedade que o jornalismo exige.
         </p>
       </section>
 
@@ -54,15 +68,29 @@ const equipe = [
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {
-            equipe.map((membro) => (
+            coordenacao.map((membro) => (
               <div class="border border-white/5 p-4 hover:border-ixporte-red/30 transition-colors duration-200">
-                <h3 class="font-headline font-bold text-ixporte-white uppercase tracking-wide">
+                <p class="text-xs text-ixporte-red uppercase tracking-widest">{membro.cargo}</p>
+                <h3 class="mt-1 font-headline font-bold text-ixporte-white uppercase tracking-wide">
                   {membro.nome}
                 </h3>
-                <p class="mt-1 text-sm text-ixporte-white/50">{membro.cargo}</p>
               </div>
             ))
           }
+        </div>
+
+        <div class="mt-8">
+          <p class="text-xs text-ixporte-red uppercase tracking-widest mb-4">Repórteres</p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-ixporte-white/70">
+            {
+              reporteres.map((nome) => (
+                <li class="flex items-start gap-2">
+                  <span class="text-ixporte-red/60 mt-1">·</span>
+                  <span>{nome}</span>
+                </li>
+              ))
+            }
+          </ul>
         </div>
       </section>
 
