@@ -6,7 +6,7 @@ category: Copa 2026
 coverImage: /images/o-que-iremos-assistir-durante-a-copa/coverImage.png
 coverImageCaption: >-
   CazéTV, SBT e Rede Globo disputam o público brasileiro durante as transmissões
-  dos jogos da Seleção Brasileira (Imagem: Editada por Gustavo Wendler
+  dos jogos da Copa do Mundo Masculina (Imagem: Editada por Gustavo Wendler
 excerpt: >-
   CazéTV, Globo e SBT disputam a audiência brasileira durante o maior evento
   esportivo do mundo.
