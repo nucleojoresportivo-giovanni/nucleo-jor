@@ -66,4 +66,4 @@ O sorteio inicial da Fifa evitou o confronto direto na primeira fase, já que o 
 
 Em um cenário onde os Estados Unidos avancem em primeiro lugar de seu grupo e o Irã passe em primeiro no seu, o confronto direto aconteceria já nas oitavas de final, no dia 6 de julho, em Seattle. Se ambos passarem na segunda colocação de seus respectivos grupos, eles se enfrentariam no mata-mata da segunda fase, no dia 3 de julho, em Dallas.
 
-Como já dizia o antropólogo Roberto DaMatta, o esporte é a própria sociedade exprimindo-se por meio de regras e ideologias. Ao entrar em campo nesta Copa, os jogadores iranianos carregarão nas costas muito mais do que o peso da camisa. Carregarão o reflexo de um mundo fragmentado, onde o futebol tenta sobreviver em meio à fumaça da guerra.
+Como dizia o antropólogo Roberto DaMatta, o esporte é a própria sociedade exprimindo-se por meio de regras e ideologias. Ao entrar em campo nesta Copa, os jogadores iranianos carregarão nas costas muito mais do que o peso da camisa. Carregarão o reflexo de um mundo fragmentado, onde o futebol tenta sobreviver em meio à fumaça da guerra.
