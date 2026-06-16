@@ -10,7 +10,7 @@ export default config({
       label: 'Reportagens',
       slugField: 'title',
       path: 'src/content/reportagens/*',
-      format: { data: 'yaml' },
+      format: { contentField: 'content' },
       schema: {
         title: fields.slug({ name: { label: 'Título' } }),
         date: fields.date({ label: 'Data' }),
@@ -32,6 +32,7 @@ export default config({
         }),
         excerpt: fields.text({ label: 'Resumo', multiline: true }),
         featured: fields.checkbox({ label: 'Destaque', defaultValue: false }),
+        content: fields.markdownEditor({ label: 'Conteúdo' }),
       },
     }),
   },
