@@ -79,18 +79,17 @@ const reporteres = [
           }
         </div>
 
-        <div class="mt-8">
-          <p class="text-xs text-ixporte-red uppercase tracking-widest mb-4">Repórteres</p>
-          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-ixporte-white/70">
-            {
-              reporteres.map((nome) => (
-                <li class="flex items-start gap-2">
-                  <span class="text-ixporte-red/60 mt-1">·</span>
-                  <span>{nome}</span>
-                </li>
-              ))
-            }
-          </ul>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          {
+            reporteres.map((nome) => (
+              <div class="border border-white/5 p-4 hover:border-ixporte-red/30 transition-colors duration-200">
+                <p class="text-xs text-ixporte-red uppercase tracking-widest">Repórter</p>
+                <h3 class="mt-1 font-headline font-bold text-ixporte-white uppercase tracking-wide">
+                  {nome}
+                </h3>
+              </div>
+            ))
+          }
         </div>
       </section>
 
