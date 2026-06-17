@@ -3,10 +3,13 @@ title: Olho neles! Os 4 novos países que vão jogar a Copa pela primeira vez
 date: 2026-06-15
 author: 'Maïa Bonvalet '
 category: Copa 2026
-coverImage: /images/4-novos-paises-jogar-copa-primeira-vez/coverImage.jpg
+coverImage: >-
+  /images/Olho neles! Os 4 novos países que vão jogar a Copa pela primeira
+  vez/coverImage.jpg
 coverImageCaption: >-
   Fifa lança logo oficial da Copa do Mundo de 2026: que começa dia 11 de junho e
   tem a final marcada para 19 de julho (Crédito da imagem: Site Oficial da FIFA)
+excerpt: 4-novos-paises-jogar-copa-primeira-vez
 featured: false
 ---
 Quando a FIFA mudou a Copa para 48 seleções, muita gente criticou. Analistas e torcedores tradicionais ficaram com medo de o nível do futebol cair e de o torneio ter muitas goleadas previsíveis. No entanto, o novo formato provou o contrário, em vez de enfraquecer o espetáculo ele mostrou o lado mais bonito e democrático do esporte, abrindo as portas para novos países realizarem o sonho de jogar um Mundial!
