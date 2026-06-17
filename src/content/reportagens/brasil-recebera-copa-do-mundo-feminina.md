@@ -4,6 +4,9 @@ date: 2026-06-15
 author: Luisa Paz
 category: Copa Feminina 2027
 coverImage: /images/brasil-recebera-copa-do-mundo-feminina/coverImage.png
+coverImageCaption: >-
+  Seleção brasileira na Copa do Mundo feminina, em 2023 - (Foto: Thais Magalhães
+  / CBF)
 excerpt: A competição terá jogos em oito cidades-sede brasileiras
 featured: true
 ---
