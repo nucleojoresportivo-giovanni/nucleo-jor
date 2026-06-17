@@ -28,7 +28,7 @@ const sm = gridArticles.slice(3, 6);
       excerpt={featured.data.excerpt}
       category={featured.data.category}
       coverImage={featured.data.coverImage}
-      href={`/reportagens/${featured.slug}`}
+      href={`/reportagens/${featured.id}`}
       date={featured.data.date}
     />
   )}
@@ -54,7 +54,7 @@ const sm = gridArticles.slice(3, 6);
           excerpt={lg.data.excerpt}
           category={lg.data.category}
           coverImage={lg.data.coverImage}
-          href={`/reportagens/${lg.slug}`}
+          href={`/reportagens/${lg.id}`}
           date={lg.data.date}
           size="lg"
         />
@@ -65,7 +65,7 @@ const sm = gridArticles.slice(3, 6);
           excerpt={article.data.excerpt}
           category={article.data.category}
           coverImage={article.data.coverImage}
-          href={`/reportagens/${article.slug}`}
+          href={`/reportagens/${article.id}`}
           date={article.data.date}
           size="md"
         />
@@ -76,7 +76,7 @@ const sm = gridArticles.slice(3, 6);
           excerpt={article.data.excerpt}
           category={article.data.category}
           coverImage={article.data.coverImage}
-          href={`/reportagens/${article.slug}`}
+          href={`/reportagens/${article.id}`}
           date={article.data.date}
           size="sm"
         />

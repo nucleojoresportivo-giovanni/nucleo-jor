@@ -1,20 +1,20 @@
 ﻿---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import CategoryBadge from '@/components/CategoryBadge.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 export const prerender = true;
 
 export async function getStaticPaths() {
   const reportagens = await getCollection('reportagens');
   return reportagens.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 const formattedDate = entry.data.date.toLocaleDateString('pt-BR', {
   day: '2-digit',

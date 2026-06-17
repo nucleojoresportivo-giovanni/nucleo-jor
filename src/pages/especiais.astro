@@ -33,7 +33,7 @@ const especiais = (await getCollection('reportagens'))
           });
           return (
             <article class="group border-b border-white/10 pb-16 last:border-0">
-              <a href={`/reportagens/${article.slug}`} class="block">
+              <a href={`/reportagens/${article.id}`} class="block">
                 <div class:list={['grid gap-6 items-center', i % 2 === 0 ? 'md:grid-cols-5' : 'md:grid-cols-5 md:[direction:rtl]']}>
                   <div class="md:col-span-2 md:[direction:ltr]">
                     <img

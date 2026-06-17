@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const categories = [
   'Copa 2026',
@@ -8,7 +9,7 @@ const categories = [
 ] as const;
 
 const reportagens = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/reportagens' }),
   schema: z.object({
     title: z.string(),
     slug: z.string().optional(),

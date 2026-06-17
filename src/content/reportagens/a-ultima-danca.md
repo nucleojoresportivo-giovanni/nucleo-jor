@@ -30,61 +30,17 @@ Este artigo conta a história de cada um deles: o que foram, o que construíram 
 
 *Visão geral de cada jogador, seu país e a probabilidade de que 2026 seja realmente sua última Copa.*
 
-{% table %}
----
-- **Jogador**
-- **País**
-- **Idade**
-- **Clube**
-{% /table %}
-
-{% table %}
----
-- **Cristiano Ronaldo**
-- 🇵🇹 Portugal
-- 41 anos
-- Al-Nassr (Arábia Saudita)
----
-- **Lionel Messi**
-- 🇦🇷 Argentina
-- 38 anos
-- Inter Miami CF (EUA · MLS)
----
-- **Luka Modrić**
-- 🇭🇷 Croácia
-- 40 anos
-- Real Madrid (Espanha)
----
-- **Neymar Jr.**
-- 🇧🇷 Brasil
-- 34 anos
-- Santos FC (Brasil · Série A)
----
-- **N'Golo Kanté**
-- 🇫🇷 França
-- 35 anos
-- Al-Ittihad (Arábia Saudita)
----
-- **Kevin De Bruyne**
-- 🇧🇪 Bélgica
-- 34 anos
-- Napoli (Itália · Serie A)
----
-- **Mohamed Salah**
-- 🇪🇬 Egito
-- 34 anos
-- Liverpool (Inglaterra · Premier League)
----
-- **Son Heung-min**
-- 🇰🇷 Coreia do Sul
-- 34 anos
-- LA FC (EUA · MLS)
----
-- **Sadio Mané**
-- 🇸🇳 Senegal
-- 34 anos
-- Al-Nassr (Arábia Saudita)
-{% /table %}
+| **Jogador** | **País** | **Idade** | **Clube** |
+| --- | --- | --- | --- |
+| **Cristiano Ronaldo** | 🇵🇹 Portugal | 41 anos | Al-Nassr (Arábia Saudita) |
+| **Lionel Messi** | 🇦🇷 Argentina | 38 anos | Inter Miami CF (EUA · MLS) |
+| **Luka Modrić** | 🇭🇷 Croácia | 40 anos | Real Madrid (Espanha) |
+| **Neymar Jr.** | 🇧🇷 Brasil | 34 anos | Santos FC (Brasil · Série A) |
+| **N'Golo Kanté** | 🇫🇷 França | 35 anos | Al-Ittihad (Arábia Saudita) |
+| **Kevin De Bruyne** | 🇧🇪 Bélgica | 34 anos | Napoli (Itália · Serie A) |
+| **Mohamed Salah** | 🇪🇬 Egito | 34 anos | Liverpool (Inglaterra · Premier League) |
+| **Son Heung-min** | 🇰🇷 Coreia do Sul | 34 anos | LA FC (EUA · MLS) |
+| **Sadio Mané** | 🇸🇳 Senegal | 34 anos | Al-Nassr (Arábia Saudita) |
 
 **1. Cristiano Ronaldo**
 
@@ -92,23 +48,12 @@ Este artigo conta a história de cada um deles: o que foram, o que construíram 
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Al-Nassr (Arábia Saudita)
----
-- **Seleções**
-- 226 convocações · 143 gols
----
-- **Copas do Mundo**
-- 6 (2006, 2010, 2014, 2018, 2022, 2026)
----
-- **Gols em Copas**
-- 8 gols
----
-- **Temporada 25/26**
-- 26 gols em 29 jogos (Saudi Pro League)
-{% /table %}
+| **Clube** | Al-Nassr (Arábia Saudita) |
+| --- | --- |
+| **Seleções** | 226 convocações · 143 gols |
+| **Copas do Mundo** | 6 (2006, 2010, 2014, 2018, 2022, 2026) |
+| **Gols em Copas** | 8 gols |
+| **Temporada 25/26** | 26 gols em 29 jogos (Saudi Pro League) |
 
 &nbsp;
 
@@ -150,23 +95,12 @@ Em 2030, Ronaldo terá 45 anos. A resposta é quase inevitável: esta é a sua �
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Inter Miami CF (EUA · MLS)
----
-- **Seleções**
-- 198 convocações · 116 gols
----
-- **Copas do Mundo**
-- 6 (2006, 2010, 2014, 2018, 2022, 2026)
----
-- **Gols em Copas**
-- 13 gols (2º maior marcador ativo)
----
-- **Temporada 25/26**
-- 35 gols e 23 assistências em 34 jogos (MLS 2025)
-{% /table %}
+| **Clube** | Inter Miami CF (EUA · MLS) |
+| --- | --- |
+| **Seleções** | 198 convocações · 116 gols |
+| **Copas do Mundo** | 6 (2006, 2010, 2014, 2018, 2022, 2026) |
+| **Gols em Copas** | 13 gols (2º maior marcador ativo) |
+| **Temporada 25/26** | 35 gols e 23 assistências em 34 jogos (MLS 2025) |
 
 &nbsp;
 
@@ -208,23 +142,12 @@ Em 2030, Messi terá 42 anos. A diferença em relação a Ronaldo está no tom: 
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Real Madrid (Espanha)
----
-- **Seleções**
-- 180+ convocações · referência da geração
----
-- **Copas do Mundo**
-- 5 (2006, 2014, 2018, 2022, 2026)
----
-- **Melhor resultado**
-- Finalista em 2018, 3º lugar em 2022
----
-- **Temporada 25/26**
-- Titular regular no Real Madrid
-{% /table %}
+| **Clube** | Real Madrid (Espanha) |
+| --- | --- |
+| **Seleções** | 180+ convocações · referência da geração |
+| **Copas do Mundo** | 5 (2006, 2014, 2018, 2022, 2026) |
+| **Melhor resultado** | Finalista em 2018, 3º lugar em 2022 |
+| **Temporada 25/26** | Titular regular no Real Madrid |
 
 &nbsp;
 
@@ -264,23 +187,12 @@ Em 2030, Modrić terá 45 anos. Esta é, com toda a certeza, a sua última Copa.
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Santos FC (Brasil · Série A)
----
-- **Seleções**
-- 124 convocações · 79 gols
----
-- **Copas do Mundo**
-- 4 (2010, 2014, 2018, 2022)
----
-- **Gols em Copas**
-- 8 gols
----
-- **Situação**
-- Retorno após longa lesão · pré-selecionado para 2026
-{% /table %}
+| **Clube** | Santos FC (Brasil · Série A) |
+| --- | --- |
+| **Seleções** | 124 convocações · 79 gols |
+| **Copas do Mundo** | 4 (2010, 2014, 2018, 2022) |
+| **Gols em Copas** | 8 gols |
+| **Situação** | Retorno após longa lesão · pré-selecionado para 2026 |
 
 &nbsp;
 
@@ -322,23 +234,12 @@ Em 2030, Neymar terá 38 anos. É possível, mas improvável, que dispute outra 
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Al-Ittihad (Arábia Saudita)
----
-- **Seleções**
-- 53 convocações · retorno à seleção em 2025
----
-- **Copas do Mundo**
-- 2 (2018, 2026)
----
-- **Melhor resultado**
-- 🏆 Campeão do Mundo em 2018
----
-- **Situação**
-- Esperado na lista de Deschamps para 2026
-{% /table %}
+| **Clube** | Al-Ittihad (Arábia Saudita) |
+| --- | --- |
+| **Seleções** | 53 convocações · retorno à seleção em 2025 |
+| **Copas do Mundo** | 2 (2018, 2026) |
+| **Melhor resultado** | 🏆 Campeão do Mundo em 2018 |
+| **Situação** | Esperado na lista de Deschamps para 2026 |
 
 &nbsp;
 
@@ -374,23 +275,12 @@ Em 2030, Kanté terá 39 anos. Não é impossível, mas está longe de ser certo
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Napoli (Itália · Serie A)
----
-- **Seleções**
-- 100+ convocações · referência da geração belga
----
-- **Copas do Mundo**
-- 3 (2014, 2018, 2022, 2026)
----
-- **Melhor resultado**
-- 3º lugar em 2018
----
-- **Temporada 25/26**
-- Recuperado de lesão · titular no Napoli
-{% /table %}
+| **Clube** | Napoli (Itália · Serie A) |
+| --- | --- |
+| **Seleções** | 100+ convocações · referência da geração belga |
+| **Copas do Mundo** | 3 (2014, 2018, 2022, 2026) |
+| **Melhor resultado** | 3º lugar em 2018 |
+| **Temporada 25/26** | Recuperado de lesão · titular no Napoli |
 
 &nbsp;
 
@@ -428,23 +318,12 @@ Em 2030, De Bruyne terá 39 anos. No papel, não é impossível. Alguns meios de
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Liverpool (Inglaterra · Premier League)
----
-- **Seleções**
-- 100+ convocações · maior artilheiro da história do Egito
----
-- **Copas do Mundo**
-- 2 (2018, 2026)
----
-- **Gols em Copas**
-- 1 gol
----
-- **Temporada 25/26**
-- Ainda em grande nível no Liverpool
-{% /table %}
+| **Clube** | Liverpool (Inglaterra · Premier League) |
+| --- | --- |
+| **Seleções** | 100+ convocações · maior artilheiro da história do Egito |
+| **Copas do Mundo** | 2 (2018, 2026) |
+| **Gols em Copas** | 1 gol |
+| **Temporada 25/26** | Ainda em grande nível no Liverpool |
 
 &nbsp;
 
@@ -478,23 +357,12 @@ Em 2030, Salah terá 38 anos. A idade não é o único problema: o Egito raramen
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- LA FC (EUA · MLS)
----
-- **Seleções**
-- 120+ convocações · capitão da seleção coreana
----
-- **Copas do Mundo**
-- 4 (2014, 2018, 2022, 2026)
----
-- **Gols em Copas**
-- 3 gols
----
-- **Temporada 25/26**
-- Transferido ao LA FC especificamente para estar em forma para a Copa
-{% /table %}
+| **Clube** | LA FC (EUA · MLS) |
+| --- | --- |
+| **Seleções** | 120+ convocações · capitão da seleção coreana |
+| **Copas do Mundo** | 4 (2014, 2018, 2022, 2026) |
+| **Gols em Copas** | 3 gols |
+| **Temporada 25/26** | Transferido ao LA FC especificamente para estar em forma para a Copa |
 
 &nbsp;
 
@@ -532,23 +400,12 @@ Em 2030, Son terá 38 anos. O movimento de sair do Tottenham para o LA FC mostra
 
 **Ficha do Jogador**
 
-{% table %}
----
-- **Clube**
-- Al-Nassr (Arábia Saudita) — companheiro de Ronaldo
----
-- **Seleções**
-- 100+ convocações · maior artilheiro da história do Senegal
----
-- **Copas do Mundo**
-- 3 (2018, 2022, 2026)
----
-- **Gols em Copas**
-- 1 gol
----
-- **Temporada 25/26**
-- Titular regular no Al-Nassr
-{% /table %}
+| **Clube** | Al-Nassr (Arábia Saudita) — companheiro de Ronaldo |
+| --- | --- |
+| **Seleções** | 100+ convocações · maior artilheiro da história do Senegal |
+| **Copas do Mundo** | 3 (2018, 2022, 2026) |
+| **Gols em Copas** | 1 gol |
+| **Temporada 25/26** | Titular regular no Al-Nassr |
 
 &nbsp;
 
