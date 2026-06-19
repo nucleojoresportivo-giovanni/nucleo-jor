@@ -15,9 +15,7 @@ A Copa do Mundo Feminina de 2027 será realizada no Brasil após nove edições 
 **Onde acontecerão os jogos**
 
 \
-Os jogos do torneio serão divididos em oito cidades diferentes: Belo Horizonte (Estádio Mineirão), Brasília (Estádio Nacional), Fortaleza (Arena Castelão), Porto Alegre (Estádio Beira-Rio), Recife (Arena de Pernambuco), Rio de Janeiro (Estádio do Maracanã), Salvador (Arena Fonte Nova) e São Paulo (Neo Química Arena).
-
-\
+Os jogos do torneio serão divididos em oito cidades diferentes: Belo Horizonte (Estádio Mineirão), Brasília (Estádio Nacional), Fortaleza (Arena Castelão), Porto Alegre (Estádio Beira-Rio), Recife (Arena de Pernambuco), Rio de Janeiro (Estádio do Maracanã), Salvador (Arena Fonte Nova) e São Paulo (Neo Química Arena), segundo a Fifa.
 
 O anúncio foi feito em 7 de maio de 2025, pelo presidente da Federação Internacional de Futebol (Fifa), Gianni Infantino, em sua conta no *Instagram*. Segundo ele, a escolha foi difícil e todas as candidaturas apresentaram um nível excepcional. “Uma jornada empolgante e inesquecível nos espera e, com o futebol feminino se unindo pela primeira vez na América do Sul graças ao Brasil”, comenta o presidente.&nbsp;
 
@@ -38,5 +36,3 @@ A candidatura venceu por 119 votos a 78 durante o Congresso da Fifa, realizado e
 Presente em todas as nove edições da Copa do Mundo Feminina até aqui, o Brasil chegará ao seu décimo Mundial consecutivo em 2027. A mesma marca poderá ser alcançada por Alemanha, Estados Unidos, Japão, Nigéria, Noruega e Suécia. No histórico individual, a ex-volante brasileira Formiga lidera o ranking de participações, com sete Copas disputadas, enquanto a zagueira nigeriana Onome Ebi e a atacante Marta acumulam seis aparições cada.
 
 Faltando pouco mais de um ano para a competição, os preparativos seguem em andamento nas cidades escolhidas. A Copa do Mundo Feminina de 2027 promete ser um marco para o futebol feminino brasileiro e para a expansão da modalidade em toda a América do Sul.&nbsp;
-
-\
