@@ -3,7 +3,8 @@ title: 'Da fase de grupos à final: como funciona a Copa do Mundo Feminina '
 date: 2026-06-15
 author: Luisa Paz
 category: Copa 2026
-coverImage: /images/como-funciona-a-copa-do-mundo-feminina/coverImage.png
+coverImage: /images/como-funciona-a-copa-do-mundo-feminina/coverImage.jpg
+coverImageCaption: 'Itália x Brasil - (Foto: CBF)'
 excerpt: >-
   Competição reunirá 32 seleções e será disputada em fases eliminatórias até a
   grande final
@@ -15,7 +16,7 @@ O Brasil será o palco da Copa do Mundo Feminina de 2027. Escolhido como sede da
 
 A primeira Copa do Mundo Feminina realizada na América do Sul receberá 32 seleções participantes, repetindo o formato do Mundial de 2023, na Austrália e Nova Zelândia. O torneio já possui 14 seleções classificadas. O Brasil, anfitrião, já está garantido e não precisa passar por qualquer torneio eliminatório.
 
-As quatro primeiras seleções classificadas garantiram presença no Mundial por meio das Eliminatórias Europeias, encerrando a disputa na liderança de seus grupos da Liga A. A Alemanha confirmou a vaga de forma antecipada ao derrotar a Noruega na penúltima rodada do Grupo D. Já Dinamarca, França e Espanha asseguraram a classificação apenas na rodada final.
+Segundo a página da Fifa, as quatro primeiras seleções classificadas garantiram presença no Mundial por meio das Eliminatórias Europeias, encerrando a disputa na liderança de seus grupos da Liga A. A Alemanha confirmou a vaga de forma antecipada ao derrotar a Noruega na penúltima rodada do Grupo D. Já Dinamarca, França e Espanha asseguraram a classificação apenas na rodada final.
 
 Na América do Sul, nove seleções disputaram duas vagas diretas para a Copa do Mundo através da Liga das Nações da Conmebol. A Colômbia conquistou o título da competição com 20 pontos, somando seis vitórias e dois empates, enquanto a Argentina ficou na segunda colocação, com 18 pontos, resultado de cinco triunfos e três empates. Com isso, ambas garantiram presença no torneio. Venezuela e Equador, que terminaram em terceiro e quarto lugares, respectivamente, disputarão a repescagem em busca de uma vaga na competição.&nbsp;
 
@@ -43,7 +44,7 @@ Ao final das três rodadas, as duas equipes mais bem colocadas de cada grupo ava
 
 **Mata-mata**
 
-Após o encerramento da fase de grupos, a Copa do Mundo Feminina de 2027 entra no mata-mata, disputado em jogo único. O formato inclui oitavas de final, quartas de final, semifinais, disputa pelo terceiro lugar e a grande decisão. Nessa etapa, a equipe vencedora avança para a fase seguinte, enquanto a derrotada se despede da competição.
+Após o encerramento da fase de grupos, a Copa do Mundo Feminina de 2027 entra no mata-mata, disputado em jogo único. Conforme o regulamento da Fifa, o formato inclui oitavas de final, quartas de final, semifinais, disputa pelo terceiro lugar e a grande decisão. Nessa etapa, a equipe vencedora avança para a fase seguinte, enquanto a derrotada se despede da competição.
 
 Caso uma partida termine empatada, serão disputados dois tempos de prorrogação, totalizando 30 minutos. Se a igualdade permanecer, a vaga será decidida nas cobranças de pênaltis. As oitavas de final estão marcadas para os dias 10 a 13 de julho, as quartas de final para 16 e 17 de julho e as semifinais para 20 e 21 de julho. A disputa pelo terceiro lugar acontece em 24 de julho, enquanto a final&nbsp; será realizada em 25 de julho de 2027.&nbsp;
 
